@@ -6,7 +6,7 @@ AOS.init();
 
 function Overview() {
   return (
-    <div className="overview">
+    <div id="about" className="overview">
       {/* <h1 className="overview-heading">ABOUT US</h1> */}
       <div className="overview-container">
         <div className="overview-container-top">

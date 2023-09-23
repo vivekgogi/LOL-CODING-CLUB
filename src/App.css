@@ -59,7 +59,7 @@ html {
   margin: 1%;
   padding: 0.12% 0.4%;
   background-color: white;
-  position: fixed;
+  designation: fixed;
   bottom: 1rem;
   right: 1rem;
   z-index: 999;
@@ -162,7 +162,7 @@ background-color: #0A4D68; */
   font-size: 1.2vmax;
   font-weight: 700;
   cursor: pointer;
-  position: relative;
+  designation: relative;
   bottom: 1px;
   color: var(--primary);
 }
@@ -416,7 +416,7 @@ background-color: #0A4D68; */
 
 .feature .explore-container .socials i:hover {
   cursor: pointer;
-  position: relative;
+  designation: relative;
   bottom: 1px;
   color: var(--primary);
 }
@@ -960,77 +960,34 @@ footer .row-2 i {
 /* ============================================ EVENTS - START ============================================ */
 
 .events-content {
-  padding: 50px 0px 90px 0px;
-  /* background-color: whitesmoke; */
+  padding: 6vmin 0 8vmin 0;
+  background-color: var(--base);
 }
 
 .events-content .section-heading {
-  width: 90%;
-  margin: auto;
-  font-size: 2rem;
+  width: 80vw;
+  margin: 0 auto 4vmin auto;
+  font-size: 2vw;
   text-align: center;
+  color: var(--primary);
+
 }
 
 .events-content .events-type-description {
-  /* border: 1px solid red; */
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 0 0 1% 0;
-}
-
-.events-content .events-type-description h4 {
-  /* margin: auto; */
+  width: 80vw;
+  margin: 0 auto 4vmin auto;
+  color: var(--secondary);
   letter-spacing: 0.5px;
   word-spacing: 1px;
-  line-height: 22px;
-  font-weight: 450;
-  font-size: 1.1rem;
-  /* text-align: center; */
-}
-
-.events-content .events-type-description .view-events:hover {
-  cursor: pointer;
-  color: grey;
-  position: relative;
-  bottom: 1px;
-}
-
-.events-content .events-types {
-  /* border: 1px solid red; */
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 1.5% 0;
-}
-
-.events-content .events-types h3 {
-  font-size: 2rem;
-}
-
-
-.events-content .events-types h4:hover {
-  cursor: pointer;
-  color: grey;
-  position: relative;
-  bottom: 1px;
+  font-size: 1.05vw;
 }
 
 .events-content .events-card-container {
-  /* border: 1px solid red; */
-  width: 90%;
-  margin: 0 auto 2% auto;
+  width: 80vw;
+  margin: 0 auto 2vmin auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-content: flex-start;
   flex-wrap: wrap;
   transition: 0.3s;
@@ -1038,84 +995,109 @@ footer .row-2 i {
 }
 
 .events-content .events-card-container .card {
-  width: 21.33%;
+  width: 20vw;
   padding: 15px;
-  border-radius: 3px;
-  background-color: white;
-  border: 1px solid grey;
-  /* background-color: rgb(23, 23, 23); */
+  border: 0.6vmin solid #171717;
+  background-color: var(--base);
+  color: var(--secondary);
+  margin-bottom: 4vmin;
+  margin-right: 4vmin;
+  transition: all 0.5s ease 0s;
 }
 
 .events-content .events-card-container .card:hover {
-  position: relative;
-  bottom: 1px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .events-content .events-card-container .card img {
-  width: 500px;
+  width: 20vw;
   height: auto;
-  /* border-radius: 5px 5px 0 0; */
+  margin: 0 auto 3vmin auto;
 }
 
 .events-content .events-card-container .card .container {
-  color: white;
-  color: var(--base);
-  font-weight: light;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--secondary);
+
 }
 
 .events-content .events-card-container .card .container p {
-  font-size: smaller;
+  font-size: 0.9vw;
   font-weight: normal;
-  margin-bottom: 4px;
+  margin-bottom: 1.2vmin;
+  text-align: center;
 }
 
 .events-content .events-card-container .card .container h4 {
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.5vw;
+  text-align: center;
 }
 
-.events-content .events-card-container .card .container .instructor-and-regbtn {
-  margin: 40px 0px 5px 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-
-.events-content .events-card-container .card .container .instructor-and-regbtn p {
-  font-size: medium;
-}
-
-.events-content .events-card-container .card .container .instructor-and-regbtn button {
+.events-content .events-card-container .card .container .action-btn {
   text-decoration: none;
   border: none;
-}
-
-.events-content .events-card-container .card .container .instructor-and-regbtn button a {
-  font-size: small;
-  color: white;
-  text-decoration: none;
   background-color: var(--base);
-  padding: 8px 15px;
-  border-radius: 5px;
+  padding: 1.5vmin;
+  margin: 3.5vmin 0 2vmin 0;
 }
 
-.events-content .events-card-container .card .container .instructor-and-regbtn button a:hover {
-  cursor: pointer;
-  background-color: grey;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.events-content .past-events-card-container .card .container .instructor-and-regbtn button a {
-  font-size: small;
-  color: white;
+.events-content .events-card-container .card .container .action-btn a {
   text-decoration: none;
-  background-color: grey;
-  padding: 8px 15px;
-  border-radius: 5px;
+  font-size: 1.2vw;
+  background-color: var(--base);
+  padding: 1.15vmin 3vmin;
+  transition: all 0.5s ease 0s;
+  border: 0.15vmin solid var(--primary);
+  color: var(--primary);
 }
+
+.events-content .events-card-container .card .container .action-btn a:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 600px) {
+  .events-content .section-heading {
+    font-size: 4vw;
+  }
+
+  .events-content .events-type-description {
+    font-size: 2.5vw;
+  }
+
+  .events-content .events-card-container .card {
+    width: 80vw;
+    margin-bottom: 6vmin;
+  }
+
+  .events-content .events-card-container .card img {
+    width: 68vw;
+  }
+
+  .events-content .events-card-container .card .container p {
+    font-size: 2.7vw;
+  }
+
+  .events-content .events-card-container .card .container h4 {
+    font-size: 4.5vw;
+  }
+
+  .events-content .events-card-container .card .container .action-btn {
+    margin: 4vmin 0 2vmin 0;
+  }
+
+  .events-content .events-card-container .card .container .action-btn a {
+    font-size: 3.2vw;
+  }
+}
+
+/* Responsiveness - End */
 
 /* ============================================ EVENTS - END ============================================ */
 
@@ -1124,102 +1106,80 @@ footer .row-2 i {
 
 
 
-/* ============================================ profile - START ============================================ */
+/* ============================================ TEAM - START ============================================ */
 
-.profile-section .section-heading {
-  width: 90%;
-  margin: auto;
-  font-size: 2rem;
-  text-align: center;
-  padding: 40px 0px 20px 0px;
+.teams-content {
+  padding: 6vmin 0 8vmin 0;
+  background-color: var(--base);
 }
 
-/* .profile-section {
-  background-color: royalblue;
-} */
-
-.profile-section .section-heading p {
-  width: 90%;
-  margin: auto;
-  font-size: 1.2rem;
+.teams-content .section-heading {
+  width: 80vw;
+  margin: 0 auto 4vmin auto;
+  font-size: 2vw;
   text-align: center;
-  font-weight: bolder;
-  color: rgb(94, 94, 94);
-  padding: 0.5% 0 0 0;
+  color: var(--primary);
 }
 
-.profile-section .profile-card-container {
+
+.teams-content .profile-card-container {
+  width: 80vw;
+  margin: 0 auto 2vmin auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  align-content: center;
-  padding: 2% 4% 6% 4%;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  transition: 0.3s;
 }
 
-.profile {
-  width: 17%;
-  padding: 30px 0 0 0;
-  margin: 1% 2% 1.5% 2%;
-  background: white;
+.teams-content .profile-card-container .profile {
+  width: 22%;
+  padding: 4vmin 0 0 0;
+  border: 0.35vmin solid #171717;
+  border: 0.3vmin solid var(--secondary);
+  background-color: var(--base);
+  color: var(--secondary);
+  margin-bottom: 4vmin;
+  margin-right: 4vmin;
+  transition: all 0.5s ease 0s;
   text-align: center;
   overflow: hidden;
-  position: relative;
   cursor: pointer;
-  /* box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.3); */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid lightgrey;
-  border-radius: 3px;
 }
 
-.profile .profile-photo {
+.teams-content .profile-card-container .profile .profile-photo img {
   display: inline-block;
-  width: 145px;
-  height: 145px;
-  margin-bottom: 50px;
-  position: relative;
-  z-index: 1;
-  margin: 7% 6% 14% 6%;
-}
-
-.profile .profile-photo img {
-  width: 100%;
+  width: 55%;
   height: auto;
+  margin: 3vmin auto 6vmin auto;
+  designation: relative;
+  z-index: 1;
   border-radius: 50%;
-  transform: scale(1);
+  box-shadow: 0 0 0 0.7vmin var(--primary);
   transition: all 0.5s ease 0s;
-  box-shadow: 0 0 0 7px lightgrey;
+  transform: scale(1);
 }
 
-.profile:hover .profile-photo img {
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-  /* box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.3); */
-  transform: scale(1.05);
+.teams-content .profile-card-container .profile:hover .profile-photo img {
+  transform: scale(1.15);
 }
 
-.profile-section .profile-card-container .profile .profile-info .title {
-  color: var(--base);
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin: 1% 0 4% 0;
+.teams-content .profile-card-container .profile .profile-info .title {
+  color: var(--secondary);
+  font-size: 1.4vw;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 1.5vmin 0;
 }
 
-.profile-section .profile-card-container .profile .profile-info .position {
-  color: grey;
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 1%;
+.teams-content .profile-card-container .profile .profile-info .designation {
+  color: var(--primary);
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 2.5vmin 0;
 }
-
-.profile-section .profile-card-container .profile .profile-info .at {
-  color: grey;
-  font-size: 0.8rem;
-  font-weight: bolder;
-  margin: 1%;
-  margin: 0 0 10% 0;
-}
-
 
 .social-icons {
   width: 100%;
@@ -1227,31 +1187,62 @@ footer .row-2 i {
   padding: 0;
   margin: 0;
   transition: all 0.5s ease;
-  /* background-color: #171717; */
-  background-color: #000C20;
-  background: linear-gradient(to right, #9837ff 0%, #2575fc 100%);
-  color: white;
+  background-color: #171717;
 }
 
 .social-icons li i {
-  display: block;
-  padding: 10px;
-  font-size: 1rem;
-  color: white;
   text-decoration: none;
+  display: block;
+  padding: 1.7vmin;
+  font-size: 3.5vmin;
+  color: var(--secondary);
   transition: all 0.5s ease;
-  font-size: 1.5rem;
 }
 
 .social-icons li i:hover {
   cursor: pointer;
-  color: grey;
+  color: var(--primary);
 }
 
-.green .social-icons li a:hover {
-  cursor: pointer;
-  color: grey;
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 600px) {
+  .teams-content .section-heading {
+    font-size: 5vw;
+  }
+
+  .teams-content .profile-card-container {
+    width: 80vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .teams-content .profile-card-container .profile {
+    width: 44%;
+    margin-bottom: 6vmin;
+  }
+
+  .teams-content .profile-card-container .profile .profile-photo img {
+    width: 20vw;
+    margin-bottom: 4vmin;
+  }
+
+  .teams-content .profile-card-container .profile .profile-info .title {
+    font-size: 3.2vw;
+  }
+
+  .teams-content .profile-card-container .profile .profile-info .designation {
+    font-size: 3vw;
+  }
+
+  .social-icons li i {
+    font-size: 4vmin;
+  }
 }
+
+/* Responsiveness - End */
 
 /* ============================================ TEAM - END ============================================ */
 

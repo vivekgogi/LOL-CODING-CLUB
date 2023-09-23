@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProfileCard({ image, name, designation }) {
+function ProfileCard({ image, name, designation, linkedin }) {
   return (
     <>
       <div className="profile">
@@ -10,7 +10,7 @@ function ProfileCard({ image, name, designation }) {
 
         <div className="profile-info">
           <h3 className="title">{name}</h3>
-          <p className="position">{designation}</p>
+          <p className="designation">{designation}</p>
         </div>
 
         <ul className="social-icons">

@@ -1,19 +1,16 @@
 import React from "react";
 
-function EventCard({ image, date, title, instructor }) {
+function EventCard({ image, datetime, title, action }) {
   return (
     <>
       <div className="card">
-        <img src={image} alt="Event" style={{ width: "100%" }} />
+        <img src={image} alt="Event" />
         <div className="container">
-          <p>{date}</p>
+          <p>{datetime}</p>
           <h4>{title}</h4>
-          <div className="instructor-and-regbtn">
-            <p>By {instructor}</p>
-            <button>
-              <a href="#events">Register Now</a>
-            </button>
-          </div>
+          <button className="action-btn">
+            <a href="#events">{action}</a>
+          </button>
         </div>
       </div>
     </>

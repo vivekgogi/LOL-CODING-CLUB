@@ -5,11 +5,11 @@ import Team from "../components/Team";
 
 function TeamPage() {
   return (
-    <>
+    <div>
       <Header />
       <Team />
       <Footer />
-    </>
+    </div>
   );
 }
 
