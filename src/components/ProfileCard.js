@@ -3,7 +3,7 @@ import React from "react";
 function ProfileCard({ image, name, designation, linkedin }) {
   return (
     <>
-      <div className="profile">
+      <div className="profile" data-aos="slide-up" data-aos-duration="1500">
         <div className="profile-photo">
           <img src={image} alt={name} />
         </div>
@@ -15,7 +15,7 @@ function ProfileCard({ image, name, designation, linkedin }) {
 
         <ul className="social-icons">
           <li>
-            <i className="fa-brands fa-linkedin"></i>
+            <a href={linkedin} target="_blank"><i className="fa-brands fa-linkedin"></i></a>
           </li>
         </ul>
       </div>

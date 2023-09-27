@@ -12,8 +12,8 @@ function Mission() {
         <h2>MISSION</h2>
       </div>
       
-      <div className="mission-content" data-aos="slide-up" data-aos-duration="2500">
-      <div className="mission-left">
+      <div className="mission-content">
+      <div className="mission-left" data-aos="slide-up" data-aos-duration="2500">
         <ul>
           <li>
             <i class="fa-sharp fa-solid fa-code"></i>Foster a dynamic and
@@ -42,7 +42,7 @@ function Mission() {
         </ul>
       </div>
       
-      <div className="mission-right">
+      <div className="mission-right" data-aos="zoom-out" data-aos-duration="2500">
         <img src={mission} alt="" />
       </div>
       </div>

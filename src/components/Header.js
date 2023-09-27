@@ -1,5 +1,4 @@
 import React from "react";
-// import DarkLogoLOL from "../images/DarkLogoLOL.jpeg";
 import LightLogoLOL from "../images/LightLogoLOL.jpg";
 import { Outlet, Link } from "react-router-dom";
 import "../App.css";
@@ -25,7 +24,7 @@ function Header() {
           <Link to="/team">Team</Link>
         </li>
         <li>
-          <Link to="/blogs">Blogs</Link>
+          <a href="https://lolclubwit.hashnode.dev/" target="_blank">Blogs</a>
         </li>
       </ul>
       <Outlet />

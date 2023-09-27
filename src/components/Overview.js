@@ -7,7 +7,6 @@ AOS.init();
 function Overview() {
   return (
     <div id="about" className="overview">
-      {/* <h1 className="overview-heading">ABOUT US</h1> */}
       <div className="overview-container">
         <div className="overview-container-top">
           <h2>Here are the Exciting Events and Activities we regularly host</h2>
@@ -32,7 +31,7 @@ function Overview() {
         <div className="overview-container-bottom">
           <div className="overview-container-bottom-left">
             <h2>What is LOL?</h2>
-            <p data-aos="slide-up" data-aos-duration="2500">
+            <p data-aos="zoom-in" data-aos-duration="2500">
               LOL Coding Club is a vibrant and inclusive community built by
               students and dedicated to students. As the name suggests, we
               believe in Learning Out Loud, where education becomes a thrilling
@@ -43,7 +42,7 @@ function Overview() {
           </div>
           <div className="overview-container-bottom-right">
             <h2>What we do?</h2>
-            <p data-aos="slide-up" data-aos-duration="2500">
+            <p data-aos="zoom-in" data-aos-duration="2500">
               At LOL Coding Club, we are committed to fostering a supportive
               environment that nurtures skill development and creativity. Our
               community thrives on the passion for coding and the desire to

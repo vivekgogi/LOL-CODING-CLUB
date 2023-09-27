@@ -20,7 +20,7 @@ function UpcomingEvents() {
         </div>
 
         <div className="events-type-description">
-          <h3>
+          <h3 data-aos="zoom-in" data-aos-duration="1000">
             Our upcoming events are packed with opportunities for growth and
             learning! Mark your calendar for the exciting events!
           </h3>

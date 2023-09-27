@@ -6,7 +6,7 @@ import "../App.css";
 function Hero() {
     return (
       <>
-        <div className="hero">
+        <div id="home" className="hero">
           <div className="hero-left">
             <div
               className="title"
@@ -21,12 +21,13 @@ function Hero() {
               LOL Coding Club is a vibrant and inclusive community built by
               students and dedicated to students. At LOL Coding Club, learning is
               not just a solitary pursuit; it's an exhilarating adventure with
-              friends, mentors, and boundless possibilities. Together, let's Learn
-              Out Loud!
+              friends, mentors, and boundless possibilities. <span>Together, let's Learn
+              Out Loud!</span>
             </h4>
             
             <div className="register-btn" data-cursor-text="Join Us!">
-              <a href="#events">Get Membership</a>
+              {/* <a href="https://forms.gle/UvR5xxsWkK2jsXDi9" target="_blanck">Get Membership</a> */}
+              <a href="" target="_blanck">Get Membership</a>
             </div>
           </div>
 

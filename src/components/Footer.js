@@ -1,91 +1,149 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 
-function Footer() {
+function Explore() {
   return (
-    <footer>
-      {/* <div className="row-1">
-        <Box1 />
-        <Box2 />
-        <Box3 />
-        <Box4 />
-      </div> */}
-      <div className="row-2">
-        <p>
-          Copyright ©2023 All rights reserved | This is made with{" "}
-          <i class="fa-solid fa-heart"></i> by LOL Coding Club Tech Team
-        </p>
-      </div>
-    </footer>
-  );
-}
+    <div className="explore">
+      <h3>EXPLORE</h3>
 
-function Box1() {
-  return (
-    <div className="box-1">
-      <h3>ABOUT LOL</h3>
-      <p>Learning Out Loud</p>
-      <p>
-        Club by the students
-        <br />
-        and for the students!
-      </p>
-      <p>Learning Out Loud</p>
-      <p>Learning Out Loud</p>
+      <ul className="menu">
+        <li>
+          <a href="https://lolclubwit.hashnode.dev/newsletter" target="_blanck">
+            Newsletter
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blanck">
+            Write Blog
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blanck">
+            Suggestion Box
+          </a>
+        </li>
+        <li>
+          <a href="https://lolclubwit.hashnode.dev/" target="_blank">
+            Blogs by LOL
+          </a>
+        </li>
+        <li>
+          <a href="https://hashnode.com/@lolclubwit" target="_blanck">
+            Hashnode
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
 
-function Box2() {
+function Events() {
   return (
-    <div className="box-2">
+    <div className="events">
       <h3>EVENTS</h3>
-      <p>Workshops</p>
-      <p>Hackathons</p>
-      <p>Coding Contest</p>
-      <p>Seminars</p>
-      <p>Sessions</p>
+      <ul className="menu">
+        <li>
+          <Link to="/events">Hackathons</Link>
+        </li>
+        <li>
+          <Link to="/events">Coding Contest</Link>
+        </li>
+        <li>
+          <Link to="/events">BootCamps</Link>
+        </li>
+        <li>
+          <Link to="/events">Workshops</Link>
+        </li>
+        <li>
+          <Link to="/events">Seminars</Link>
+        </li>
+      </ul>
     </div>
   );
 }
 
-function Box3() {
+function DirectLinks() {
   return (
-    <div className="box-3">
+    <div className="direct-links">
       <h3>DIRECT LINKS</h3>
-      <p>Home</p>
-      <p>About Us</p>
-      <p>Our Team</p>
-      <p>All Events</p>
-      <p>Membership</p>
+      <ul className="menu">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About Us</Link>
+        </li>
+        <li>
+          <Link to="/events">Our Events</Link>
+        </li>
+        <li>
+          <Link to="/team">Our Team</Link>
+        </li>
+        <li>
+          <a href="https://lolclubwit.hashnode.dev/" target="_blank">
+            Blogs
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }
 
-function Box4() {
+function ConnectUs() {
   return (
-    <div className="box-4">
+    <div className="connect-us">
       <h3>CONNECT US</h3>
       <p>
         <i class="fa fa-map-marker"></i>
         LOL Coding Club, <br />
-        Walchand Institue Of Technology, <br />
-        Solapur
+        Walchand Institue Of Technology, Solapur
       </p>
-      <p>
+      {/* <p>
         <i class="fa fa-phone" aria-hidden="true"></i> +91 9876543210
-      </p>
-      <p>
-        <i class="fa fa-envelope" aria-hidden="true"></i> lolclub@gmail.com
-      </p>
+      </p> */}
+      <a href="mailto:lolclubwit@gmail.com" target="_blank">
+        <i class="fa fa-envelope" aria-hidden="true"></i>lolclubwit@gmail.com
+      </a>
       <div className="socials">
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-discord"></i>
-        <i class="fa-brands fa-slack"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
+        <a
+          href="https://www.linkedin.com/company/lol-coding-club/"
+          target="_blanck"
+        >
+          <i className="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/lolcodingclub_wit/" target="_blanck">
+          <i className="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://discord.com/invite/dVU3XgXp" target="_blanck">
+          <i className="fa-brands fa-discord"></i>
+        </a>
+        <a href="https://hashnode.com/@lolclubwit" target="_blanck">
+          <i className="fa-brands fa-hashnode"></i>
+        </a>
       </div>
     </div>
+  );
+}
+
+function Footer() {
+  return (
+    <footer>
+      <div className="prefooter">
+        <ConnectUs />
+        <div className="sub-prefooter">
+          <DirectLinks />
+          <Explore />
+          <Events />
+        </div>
+      </div>
+      <div className="footer">
+        <p>
+          Copyright ©2023 All rights reserved | This is made with{" "}
+          <i class="fa-solid fa-heart"></i> by LOL Coding Club Dev Team
+        </p>
+      </div>
+    </footer>
   );
 }
 

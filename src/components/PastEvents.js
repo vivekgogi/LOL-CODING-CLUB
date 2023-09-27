@@ -20,7 +20,7 @@ function PastEvents() {
         </div>
 
         <div className="events-type-description">
-          <h3>
+          <h3 data-aos="zoom-in" data-aos-duration="1000">
             Our past events were a treasure trove of growth and learning
             opportunities! We hope you had a chance to experience the
             excitement.
