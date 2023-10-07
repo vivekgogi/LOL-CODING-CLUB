@@ -675,6 +675,7 @@ background-color: #0A4D68; */
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  text-align: justify;
 }
 
 .overview .overview-container .overview-container-top {
@@ -978,6 +979,7 @@ background-color: #0A4D68; */
   justify-content: space-between;
   align-content: center;
   background-color: var(--base);
+  text-align: justify;
 }
 
 .vision .vision-left img {
