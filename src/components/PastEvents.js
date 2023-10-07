@@ -1,14 +1,28 @@
 import React, { useState } from "react";
-import CodingContest from "../images/CodingContest.jpeg";
+import CodingContest from "../images/events/CodingContest.jpeg";
+import codingcomp from "../images/events/codingcomp.jpg";
+import flutterworkshop from "../images/events/flutterworkshop.jpg";
 import EventCard from "../components/EventCard";
 
 function PastEvents() {
   const [upcomingEvents] = useState([
     {
       image: CodingContest,
+      datetime: "September, 2023",
+      title: "Coding Contest Sept 2023",
+      action: "View event",
+    },
+    {
+      image: codingcomp,
+      datetime: "November, 2022",
+      title: "Coding Contest Nov 2022",
+      action: "View event",
+    },
+    {
+      image: flutterworkshop,
       datetime: "September 18, 2023 | 5:00 PM",
-      title: "Coding Contest",
-      action: "View Contest",
+      title: "Flutter Workshop",
+      action: "View event",
     },
   ]);
 

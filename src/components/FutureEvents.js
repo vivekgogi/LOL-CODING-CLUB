@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ComingSoon from "../images/ComingSoon.png";
-import LOLPowerBIWorkshop from "../images/LOLPowerBIWorkshop.png";
+import LOLPowerBIWorkshop from "../images/events/LOLPowerBIWorkshop.png";
 import EventCard from "../components/EventCard";
 
 function UpcomingEvents() {

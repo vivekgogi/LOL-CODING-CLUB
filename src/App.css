@@ -1084,6 +1084,9 @@ background-color: #0A4D68; */
   margin-bottom: 4vmin;
   margin-right: 4vmin;
   transition: all 0.5s ease 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .events-content .events-card-container .card:hover {
