@@ -24,7 +24,7 @@ function Header() {
           <Link to="/team">Team</Link>
         </li>
         <li>
-          <a href="https://lolclubwit.hashnode.dev/" target="_blank">Blogs</a>
+          <a href="https://lolclubwit.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blogs</a>
         </li>
       </ul>
       <Outlet />

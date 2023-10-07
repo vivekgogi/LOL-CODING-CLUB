@@ -24,7 +24,7 @@ function Explore() {
           </a>
         </li>
         <li>
-          <a href="https://lolclubwit.hashnode.dev/" target="_blank">
+          <a href="https://lolclubwit.hashnode.dev/" target="_blank" rel="noopener noreferrer">
             Blogs by LOL
           </a>
         </li>
@@ -81,7 +81,7 @@ function DirectLinks() {
           <Link to="/team">Our Team</Link>
         </li>
         <li>
-          <a href="https://lolclubwit.hashnode.dev/" target="_blank">
+          <a href="https://lolclubwit.hashnode.dev/" target="_blank" rel="noopener noreferrer">
             Blogs
           </a>
         </li>
@@ -102,7 +102,7 @@ function ConnectUs() {
       {/* <p>
         <i class="fa fa-phone" aria-hidden="true"></i> +91 9876543210
       </p> */}
-      <a href="mailto:lolclubwit@gmail.com" target="_blank">
+      <a href="mailto:lolclubwit@gmail.com" target="_blank" rel="noopener noreferrer">
         <i class="fa fa-envelope" aria-hidden="true"></i>lolclubwit@gmail.com
       </a>
       <div className="socials">
