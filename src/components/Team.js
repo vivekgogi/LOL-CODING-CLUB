@@ -132,7 +132,7 @@ function Team() {
     },
     {
       name: "Sakshi Bidwai",
-      designation: "Graphic Designer",
+      designation: "Director",
       image: SakshiBidwai,
       linkedin: "https://www.linkedin.com/in/sakshi-bidwai-a48034226",
     },

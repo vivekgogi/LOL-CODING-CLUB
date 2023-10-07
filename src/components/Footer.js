@@ -14,12 +14,12 @@ function Explore() {
           </a>
         </li>
         <li>
-          <a href="" target="_blanck">
+          <a href="https://forms.gle/6keszXqp6ZNGgR6QA" target="_blanck">
             Write Blog
           </a>
         </li>
         <li>
-          <a href="" target="_blanck">
+          <a href="https://forms.gle/QSMzwVr5PrZJcd6t8" target="_blanck">
             Suggestion Box
           </a>
         </li>
@@ -115,7 +115,7 @@ function ConnectUs() {
         <a href="https://www.instagram.com/lolcodingclub_wit/" target="_blanck">
           <i className="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://discord.com/invite/dVU3XgXp" target="_blanck">
+        <a href="https://discord.gg/bjSxDHzEte" target="_blanck">
           <i className="fa-brands fa-discord"></i>
         </a>
         <a href="https://hashnode.com/@lolclubwit" target="_blanck">

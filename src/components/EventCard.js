@@ -1,16 +1,16 @@
 import React from "react";
 
-function EventCard({ image, datetime, title, action }) {
+function EventCard(props) {
   return (
     <>
       {/* <div className="card" data-aos="slide-up" data-aos-duration="2500"> */}
       <div className="card" data-aos="slide-up" data-aos-duration="1500">
-        <img src={image} alt="Event" />
+        <img src={props.image} alt="Event" />
         <div className="container">
-          <p>{datetime}</p>
-          <h4>{title}</h4>
+          <p>{props.datetime}</p>
+          <h4>{props.title}</h4>
           <button className="action-btn">
-            <a href="#events">{action}</a>
+            <a href={props.registrationform} target="_blank">{props.action}</a>
           </button>
         </div>
       </div>

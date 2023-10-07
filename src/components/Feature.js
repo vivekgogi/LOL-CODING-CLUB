@@ -14,7 +14,7 @@ function EventContainer() {
         <p>MONDAY, 9th OCTOBER 2023</p>
         <p>Register to Participate!</p>
       </div>
-      <a className="register-btn" href="#">
+      <a className="register-btn" href="https://forms.gle/2DZtRSVfKen122yM8" target="_black">
         Register Now
       </a>
     </div>
@@ -38,13 +38,13 @@ function ExploreContainer() {
         </a>
       </div>
       <div className="write-blog">
-        <a href="#" target="_blank">
+        <a href="https://forms.gle/6keszXqp6ZNGgR6QA" target="_blank">
           <i className="fa-brands fa-blogger-b"></i>
           Write Blog for LOL
         </a>
       </div>
       <div className="suggestion-box">
-        <a href="#" target="_blank">
+        <a href="https://forms.gle/QSMzwVr5PrZJcd6t8" target="_blank">
           <i className="fa-solid fa-box-tissue"></i>
           LOL Suggestion Box
         </a>
@@ -65,7 +65,7 @@ function ExploreContainer() {
         <a href="https://www.instagram.com/lolcodingclub_wit/" target="_blanck">
           <i className="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://discord.com/invite/dVU3XgXp" target="_blanck">
+        <a href="https://discord.gg/bjSxDHzEte" target="_blanck">
           <i className="fa-brands fa-discord"></i>
         </a>
         <a href="https://hashnode.com/@lolclubwit" target="_blanck">

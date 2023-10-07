@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import ComingSoon from "../images/ComingSoon.png";
+import LOLPowerBIWorkshop from "../images/LOLPowerBIWorkshop.png";
 import EventCard from "../components/EventCard";
 
 function UpcomingEvents() {
   const [upcomingEvents] = useState([
     {
-      image: ComingSoon,
+      image: LOLPowerBIWorkshop,
       datetime: "October 9, 2023 | 4:30 PM",
-      title: "Power BI Bootcamp",
-      action: "Register Now"
+      title: "Power BI Workshop",
+      action: "Register Now",
+      registrationform: "https://forms.gle/2DZtRSVfKen122yM8"
     },
   ]);
 
@@ -34,6 +36,7 @@ function UpcomingEvents() {
               datetime={event.datetime}
               title={event.title}
               action={event.action}
+              registrationform={event.registrationform}
             />
           ))}
         </div>
