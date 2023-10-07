@@ -3,6 +3,8 @@ import CodingContest from "../images/events/CodingContest.jpeg";
 import codingcomp from "../images/events/codingcomp.jpg";
 import flutterworkshop from "../images/events/flutterworkshop.jpg";
 import EventCard from "../components/EventCard";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 function PastEvents() {
   const [upcomingEvents] = useState([
@@ -26,6 +28,26 @@ function PastEvents() {
     },
   ]);
 
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <>
       <div id="events" className="events-content">
@@ -40,7 +62,6 @@ function PastEvents() {
             excitement.
           </h3>
         </div>
-
         <div className="events-card-container">
           {upcomingEvents.map((event) => (
             <EventCard
@@ -52,6 +73,26 @@ function PastEvents() {
             />
           ))}
         </div>
+
+
+        {/* <div className="caraousel">
+          <Carousel
+            responsive={responsive}
+            autoPlay={true}
+            showDots={true}
+            infinite={true}
+          >
+            {upcomingEvents.map((event) => (
+              <EventCard
+                key={event.date}
+                image={event.image}
+                datetime={event.datetime}
+                title={event.title}
+                action={event.action}
+              />
+            ))}
+          </Carousel>
+        </div> */}
       </div>
     </>
   );

@@ -1099,28 +1099,61 @@ background-color: #0A4D68; */
   margin: 0 auto 3vmin auto;
 }
 
-.events-content .events-card-container .card .container {
+
+/* ==================================== Caraousel ================================================= */
+.caraousel .card {
+  width: 20vw;
+  padding: 15px;
+  border: 0.6vmin solid #171717;
+  background-color: var(--base);
+  color: var(--secondary);
+  margin-bottom: 4vmin;
+  margin-right: 4vmin;
+  transition: all 0.5s ease 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caraousel li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caraousel .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: var(--secondary);
-
+  padding-top: 30px;
 }
 
-.events-content .events-card-container .card .container p {
+.card .container p {
   font-size: 0.9vw;
   font-weight: normal;
   margin-bottom: 1.2vmin;
   text-align: center;
 }
 
-.events-content .events-card-container .card .container h4 {
+.card .container h4 {
   font-weight: 600;
   font-size: 1.5vw;
   text-align: center;
 }
 
-.events-content .events-card-container .card .container .action-btn {
+.card .container .action-btn {
   text-decoration: none;
   border: none;
   background-color: var(--base);
@@ -1128,7 +1161,7 @@ background-color: #0A4D68; */
   margin: 3.5vmin 0 2vmin 0;
 }
 
-.events-content .events-card-container .card .container .action-btn a {
+.card .container .action-btn a {
   text-decoration: none;
   font-size: 1.2vw;
   background-color: var(--base);
@@ -1138,12 +1171,11 @@ background-color: #0A4D68; */
   color: var(--primary);
 }
 
-.events-content .events-card-container .card .container .action-btn a:hover {
+.card .container .action-btn a:hover {
   cursor: pointer;
   background-color: var(--primary);
   color: var(--secondary);
 }
-
 /* Responsiveness - Start */
 
 @media only screen and (max-width: 700px) {
@@ -1177,6 +1209,26 @@ background-color: #0A4D68; */
   }
 
   .events-content .events-card-container .card .container .action-btn a {
+    font-size: 3.2vw;
+  }
+
+  .caraousel .card {
+    width: 80vw;
+  }
+
+  .caraousel .container p {
+    font-size: 2.7vw;
+  }
+
+  .caraousel .container h4 {
+    font-size: 4.5vw;
+  }
+
+  .caraousel .container .action-btn {
+    margin: 4vmin 0 2vmin 0;
+  }
+
+  .caraousel .container .action-btn a {
     font-size: 3.2vw;
   }
 }

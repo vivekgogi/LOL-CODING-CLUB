@@ -8,8 +8,17 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <img src={LightLogoLOL} alt="LOL" />
-        <img src={LogoWIT} alt="LOL" />
+        <Link to="/">
+          <img src={LightLogoLOL} alt="LOL" />
+        </Link>
+        
+        <a
+          href="https://witsolapur.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={LogoWIT} alt="LOL" />
+        </a>
       </div>
 
       <div className="menu">
