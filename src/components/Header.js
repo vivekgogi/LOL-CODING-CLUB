@@ -1,5 +1,6 @@
 import React from "react";
 import LightLogoLOL from "../images/LightLogoLOL.jpg";
+import LogoWIT from "../images/LogoWIT.png";
 import { Outlet, Link } from "react-router-dom";
 import "../App.css";
 
@@ -8,25 +9,34 @@ function Header() {
     <div className="header">
       <div className="logo">
         <img src={LightLogoLOL} alt="LOL" />
+        <img src={LogoWIT} alt="LOL" />
       </div>
 
-      <ul className="menu">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/events">Events</Link>
-        </li>
-        <li>
-          <Link to="/team">Team</Link>
-        </li>
-        <li>
-          <a href="https://lolclubwit.hashnode.dev/" target="_blank" rel="noopener noreferrer">Blogs</a>
-        </li>
-      </ul>
+      <div className="menu">
+        <Link to="/">LOL Home</Link>
+
+        <a
+          href="https://witsolapur.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WIT Home
+        </a>
+
+        <Link to="/about">About</Link>
+
+        <Link to="/events">Events</Link>
+
+        <Link to="/team">Team</Link>
+
+        <a
+          href="https://lolclubwit.hashnode.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Blogs
+        </a>
+      </div>
       <Outlet />
     </div>
   );

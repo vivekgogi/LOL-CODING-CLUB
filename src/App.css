@@ -128,10 +128,11 @@ background-color: #0A4D68; */
   width: 2.3vmax;
   height: auto;
   border-radius: 3px;
+  margin-right: 10px;
 }
 
 .header .logo img:hover {
-  width: 2.4vmax;
+  /* width: 2.4vmax; */
   cursor: pointer;
 }
 
@@ -167,8 +168,50 @@ background-color: #0A4D68; */
   color: var(--primary);
 }
 
+.header .menu {
+  display: flex;
+  margin-right: 70px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .menu a {
+  text-decoration: none;
+  width: 100%;
+  font-size: 1vmax;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  min-width: fit-content;
+}
+
+.header .menu a:hover {
+  font-size: 1.2vmax;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  bottom: 1px;
+  color: var(--primary);
+}
+
 /* Responsiveness - Start */
-/* Noting to Change */
+@media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 512px) {
+    .header .logo {
+      margin-left: 10px;
+    }
+
+    .header .menu {
+      margin: 0;
+      margin-right: 15px;
+      min-width: min-content;
+      gap: 9px;
+    }
+  }
+}
 /* Responsiveness - End*/
 
 /* ============================================ HEADER - END ============================================ */
@@ -205,7 +248,7 @@ background-color: #0A4D68; */
 
 .hero .hero-left .subtitle {
   color: var(--primary);
-  font-family: 'Bree Serif', serif;
+  font-family: "Bree Serif", serif;
   font-size: 2.7vw;
   font-weight: 900;
   letter-spacing: 0.35vmax;
@@ -260,7 +303,6 @@ background-color: #0A4D68; */
 
 /* Responsiveness - Start */
 
-
 @media only screen and (max-width: 700px) {
   @media only screen and (max-width: 512px) {
     .hero {
@@ -289,7 +331,6 @@ background-color: #0A4D68; */
     .hero .hero-left .description {
       font-size: 2.4vw;
       line-height: 3.3vw;
-      ;
     }
 
     .hero .hero-right {
@@ -303,6 +344,9 @@ background-color: #0A4D68; */
     }
   }
 
+  .hero .hero-left .register-btn a {
+    font-size: 10px;
+  }
 }
 
 /* Responsiveness - End */
@@ -587,25 +631,25 @@ background-color: #0A4D68; */
 /* Responsiveness - Start */
 
 @media only screen and (max-width: 700px) {
-  
+
   .about-lol .about-lol-heading {
     font-size: 9vw;
   }
-  
+
   .about-lol .about-lol-sub-heading {
     font-size: 3vw;
   }
-  
+
   .about-lol .about-lol-content {
     flex-direction: column;
   }
-  
-  
+
+
   .about-lol .about-lol-content .about-lol-content-img img {
     width: 50vw;
     margin-top: 10vmin;
   }
-  
+
   .about-lol .about-lol-content .about-lol-content-text {
     font-size: 7vw;
     margin-bottom: 10vmin;
@@ -1283,7 +1327,7 @@ background-color: #0A4D68; */
     background-color: var(--base);
     margin: 0 auto 0 auto;
   }
-  
+
   .teams-sub-heading {
     font-size: 3.6vw;
     font-weight: 500;
