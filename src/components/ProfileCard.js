@@ -15,7 +15,7 @@ function ProfileCard({ image, name, designation, linkedin }) {
 
         <ul className="social-icons">
           <li>
-            <a href={linkedin} target="_blank"><i className="fa-brands fa-linkedin"></i></a>
+            <a href={linkedin} target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-linkedin"></i></a>
           </li>
         </ul>
       </div>

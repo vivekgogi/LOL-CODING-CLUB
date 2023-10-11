@@ -32,25 +32,25 @@ function ExploreContainer() {
       <h1>EXPLORE</h1>
 
       <div className="news-letter-hashnode">
-        <a href="https://lolclubwit.hashnode.dev/newsletter" target="_blank">
+        <a href="https://lolclubwit.hashnode.dev/newsletter" target="_blank" rel="noopener noreferrer">
           <i className="fa fa-newspaper-o"></i>
           Subscribe News Letter
         </a>
       </div>
       <div className="write-blog">
-        <a href="https://forms.gle/6keszXqp6ZNGgR6QA" target="_blank">
+        <a href="https://forms.gle/6keszXqp6ZNGgR6QA" target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-blogger-b"></i>
           Write Blog for LOL
         </a>
       </div>
       <div className="suggestion-box">
-        <a href="https://forms.gle/QSMzwVr5PrZJcd6t8" target="_blank">
+        <a href="https://forms.gle/QSMzwVr5PrZJcd6t8" target="_blank" rel="noopener noreferrer">
           <i className="fa-solid fa-box-tissue"></i>
           LOL Suggestion Box
         </a>
       </div>
       <div className="follow-hashnode">
-        <a href="https://hashnode.com/@lolclubwit" target="_blank">
+        <a href="https://hashnode.com/@lolclubwit" target="_blank" rel="noopener noreferrer">
           <i className="fa-brands fa-hashnode"></i>
           Follow Us On hashnode
         </a>
