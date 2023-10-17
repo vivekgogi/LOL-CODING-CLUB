@@ -8,15 +8,15 @@ function EventContainer() {
     <div className="event-container">
       <div className="event-info">
         <h1>UPCOMING EVENT</h1>
-        <h2>Power BI BootCamp</h2>
-        <p>Hands on Session on Power BI</p>
+        <h2>Coming soon</h2>
+        {/* <p>Hands on Session on Power BI</p>
         <p>Remote Center Hall, WIT Solapur</p>
         <p>MONDAY, 9th OCTOBER 2023</p>
-        <p>Register to Participate!</p>
+        <p>Register to Participate!</p> */}
       </div>
-      <a className="register-btn" href="https://forms.gle/2DZtRSVfKen122yM8" target="_black">
+      {/* <a className="register-btn" href="https://forms.gle/2DZtRSVfKen122yM8" target="_black">
         Register Now
-      </a>
+      </a> */}
     </div>
   );
 }
