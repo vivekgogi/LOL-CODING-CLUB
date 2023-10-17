@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import CodingContest from "../images/events/CodingContest.jpeg";
 import codingcomp from "../images/events/codingcomp.jpg";
+import threejs from "../images/events/3js.png";
+import powerBI from "../images/events/LOLPowerBIWorkshop.png";
 import flutterworkshop from "../images/events/flutterworkshop.jpg";
 import EventCard from "../components/EventCard";
 import Carousel from "react-multi-carousel";
@@ -9,9 +11,21 @@ import "react-multi-carousel/lib/styles.css";
 function PastEvents() {
   const [upcomingEvents] = useState([
     {
+      image: powerBI,
+      datetime: "October, 2023",
+      title: "Power BI Workshop and Hackathon",
+      action: "View event",
+    },
+    {
       image: CodingContest,
       datetime: "September, 2023",
       title: "Coding Contest Sept 2023",
+      action: "View event",
+    },
+    {
+      image: threejs,
+      datetime: "March, 2022",
+      title: "Three JS Workshop",
       action: "View event",
     },
     {
@@ -55,7 +69,7 @@ function PastEvents() {
           <h1>Past Events</h1>
         </div>
 
-        <div className="events-type-description">
+        {/* <div className="events-type-description">
           <h3 data-aos="zoom-in" data-aos-duration="1000">
             Our past events were a treasure trove of growth and learning
             opportunities! We hope you had a chance to experience the
@@ -72,15 +86,16 @@ function PastEvents() {
               action={event.action}
             />
           ))}
-        </div>
+        </div> */}
 
 
-        {/* <div className="caraousel">
+        <div className="caraousel">
           <Carousel
             responsive={responsive}
             autoPlay={true}
             showDots={true}
-            infinite={true}
+            rewind={true}
+            rewindWithAnimation={true}
           >
             {upcomingEvents.map((event) => (
               <EventCard
@@ -92,7 +107,7 @@ function PastEvents() {
               />
             ))}
           </Carousel>
-        </div> */}
+        </div>
       </div>
     </>
   );

@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import ComingSoon from "../images/ComingSoon.png";
-import LOLPowerBIWorkshop from "../images/events/LOLPowerBIWorkshop.png";
 import EventCard from "../components/EventCard";
 
 function UpcomingEvents() {
   const [upcomingEvents] = useState([
     {
-      image: LOLPowerBIWorkshop,
-      datetime: "October 9, 2023 | 4:30 PM",
-      title: "Power BI Workshop",
-      action: "Register Now",
-      registrationform: "https://forms.gle/2DZtRSVfKen122yM8"
+      image: ComingSoon,
+      datetime: "",
+      title: "",
+      action: "Coming soon",
+      registrationform: ""
     },
   ]);
 
