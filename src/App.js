@@ -4,6 +4,7 @@ import AboutPage from "./pages/AboutPage";
 import EventsPage from "./pages/EventsPage";
 import TeamPage from "./pages/TeamPage";
 import SuggestPage from "./pages/SuggestPage";
+import CertificateVerificationPage from "./pages/CertificateVerificationPage";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/events" element={<EventsPage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/suggest" element={<AboutPage />} />
+        <Route path="/verify" element={<CertificateVerificationPage />} />
       </Routes>
     </div>
   );

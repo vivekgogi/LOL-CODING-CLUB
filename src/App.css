@@ -1692,3 +1692,38 @@ footer .footer i {
 
 
 /* Media Queries for Screen Size 480px, 768px, 1200px devices. */
+/* ============================================== Certificate ============================================*/
+.certificate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body,html
+{
+    background-color: #000000;
+    padding:0px;
+    margin:0px;
+    height:100%;
+    width:100%;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 43%;
+  background-color: #000000;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0.5vh;
+  width: 99.8%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .iframe-container {
+    padding-bottom: 90%;
+  }
+}

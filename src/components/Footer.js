@@ -95,15 +95,15 @@ function ConnectUs() {
     <div className="connect-us">
       <h3>CONNECT US</h3>
       <p>
-        <i class="fa fa-map-marker"></i>
+        <i className="fa fa-map-marker"></i>
         LOL Coding Club, <br />
         Walchand Institue Of Technology, Solapur
       </p>
       {/* <p>
-        <i class="fa fa-phone" aria-hidden="true"></i> +91 9876543210
+        <i className="fa fa-phone" aria-hidden="true"></i> +91 9876543210
       </p> */}
       <a href="mailto:lolclubwit@gmail.com" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-envelope" aria-hidden="true"></i>lolclubwit@gmail.com
+        <i className="fa fa-envelope" aria-hidden="true"></i>lolclubwit@gmail.com
       </a>
       <div className="socials">
         <a
@@ -140,7 +140,7 @@ function Footer() {
       <div className="footer">
         <p>
           Copyright ©2023 All rights reserved | This is made with{" "}
-          <i class="fa-solid fa-heart"></i> by LOL Coding Club Dev Team
+          <i className="fa-solid fa-heart"></i> by LOL Coding Club Dev Team
         </p>
       </div>
     </footer>
