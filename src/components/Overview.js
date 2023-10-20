@@ -12,18 +12,18 @@ function Overview() {
           <h2>Here are the Exciting Events and Activities we regularly host</h2>
           <div className="events">
             <p data-aos="slide-right" data-aos-duration="500">
-              <i class="fa-solid fa-book-open-reader"></i> Workshops
+              <i className="fa-solid fa-book-open-reader"></i> Workshops
             </p>
             <p data-aos="slide-right" data-aos-duration="700">
               {" "}
-              <i class="fa-solid fa-laptop-code"></i> Hackathons
+              <i className="fa-solid fa-laptop-code"></i> Hackathons
             </p>
             <p data-aos="slide-right" data-aos-duration="1100">
-              <i class="fa-solid fa-laptop-file"></i>Seminars
+              <i className="fa-solid fa-laptop-file"></i>Seminars
             </p>
             <p data-aos="slide-right" data-aos-duration="900">
               {" "}
-              <i class="fa-sharp fa-solid fa-code"></i> Coding Contest
+              <i className="fa-sharp fa-solid fa-code"></i> Coding Contest
             </p>
           </div>
         </div>

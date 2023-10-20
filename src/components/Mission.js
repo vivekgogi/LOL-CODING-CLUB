@@ -16,27 +16,27 @@ function Mission() {
       <div className="mission-left" data-aos="slide-up" data-aos-duration="2500">
         <ul>
           <li>
-            <i class="fa-sharp fa-solid fa-code"></i>Foster a dynamic and
+            <i className="fa-sharp fa-solid fa-code"></i>Foster a dynamic and
             inclusive community of learners.
           </li>
           <li>
-            <i class="fa-sharp fa-solid fa-code"></i>Unite members with a shared
+            <i className="fa-sharp fa-solid fa-code"></i>Unite members with a shared
             passion for coding and technology.
           </li>
           <li>
-            <i class="fa-sharp fa-solid fa-code"></i>Provide a supportive
+            <i className="fa-sharp fa-solid fa-code"></i>Provide a supportive
             environment for skill enhancement.
           </li>
           <li>
-            <i class="fa-sharp fa-solid fa-code"></i>Encourage exploration of
+            <i className="fa-sharp fa-solid fa-code"></i>Encourage exploration of
             new technologies and coding concepts.
           </li>
           <li>
-            <i class="fa-sharp fa-solid fa-code"></i>Collaborate on innovative
+            <i className="fa-sharp fa-solid fa-code"></i>Collaborate on innovative
             coding projects and initiatives.
           </li>
           <li>
-            <i class="fa-sharp fa-solid fa-code"></i>Prepare individuals to
+            <i className="fa-sharp fa-solid fa-code"></i>Prepare individuals to
             adapt in the ever-evolving digital landscape.
           </li>
         </ul>
