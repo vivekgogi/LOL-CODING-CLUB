@@ -1,4 +1,5 @@
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import EventsPage from "./pages/EventsPage";
@@ -12,7 +13,8 @@ import HashnodePage from "./pages/redirects/HashnodePage";
 import LinkedInPage from "./pages/redirects/LinkedInPage";
 import DiscordPage from "./pages/redirects/DiscordPage";
 import InstagramPage from "./pages/redirects/InstagramPage";
-import { Routes, Route } from "react-router-dom";
+import LOLIDPage from "./pages/redirects/LOLIDPage";
+import AlumniConnectPage from "./pages/AlmuniConnectPage";
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
         <Route path="/team" element={<TeamPage />} />
         <Route path="/suggest" element={<SuggestPage />} />
         <Route path="/verify" element={<CertificateVerificationPage />} />
+        <Route path="/alumniconnect" element={<AlumniConnectPage />} />
 
         {/* redirects */}
         <Route path="/blogs" element={<BlogsPage />} />
@@ -34,6 +37,7 @@ function App() {
         <Route path="/linkedin" element={<LinkedInPage />} />
         <Route path="/discord" element={<DiscordPage />} />
         <Route path="/instagram" element={<InstagramPage />} />
+        <Route path="/lol-id" element={<LOLIDPage />} />
       </Routes>
     </div>
   );

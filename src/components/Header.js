@@ -3,6 +3,7 @@ import LightLogoLOL from "../images/LightLogoLOL.jpg";
 import LogoWIT from "../images/LogoWIT.png";
 import { Outlet, Link } from "react-router-dom";
 import "../App.css";
+import TemporaryDrawer from "./TemporaryDrawer";
 
 function Header() {
   return (
@@ -43,9 +44,13 @@ function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Blogs
+          Blog
         </a>
+
+        <Link to="/alumniconnect">Alumni Connect</Link>
       </div>
+
+      <TemporaryDrawer/>
       <Outlet />
     </div>
   );

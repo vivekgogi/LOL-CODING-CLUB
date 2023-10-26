@@ -50,9 +50,10 @@ function ExploreContainer() {
         </a>
       </div>
       <div className="follow-hashnode">
-        <a href="https://hashnode.com/@lolclubwit" target="_blank" rel="noopener noreferrer">
-          <i className="fa-brands fa-hashnode"></i>
-          Follow Us On hashnode
+        <a href="https://play.google.com/store/apps/details?id=io.annadate.lol_id" target="_blank" rel="noopener noreferrer">
+          {/* <i className="fa-brands fa-hashnode"></i> */}
+          <i className="fa-brands fa-google-play"/>
+          Download LOL ID app
         </a>
       </div>
       <div className="socials">
