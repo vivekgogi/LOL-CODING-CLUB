@@ -30,7 +30,7 @@ function AlumniTable({ year, data }) {
                 </Td>
                 <Td>
                   <a
-                    href={"mail:to" + element.linkedin}
+                    href={element.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
