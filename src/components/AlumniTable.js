@@ -12,6 +12,7 @@ function AlumniTable({ year, data }) {
             <Th>Email</Th>
             <Th>LinkedIn</Th>
             <Th>Portfolio/Website</Th>
+            <Th>Domain of Expertise</Th>
           </Tr>
         </Thead>
         <Tbody>
@@ -46,6 +47,7 @@ function AlumniTable({ year, data }) {
                     {element.other}
                   </a>
                 </Td>
+                <Td>{element.domain}</Td>
               </Tr>
             );
           })}
