@@ -46,9 +46,9 @@ function AlumniConnect() {
           Add yourself!
         </a>
       </div>
-      <AlumniTable key={2023} year={2023} data={alumni21} />
+      <AlumniTable key={2023} year={2023} data={alumni23} />
       <AlumniTable key={2022} year={2022} data={alumni22} />
-      <AlumniTable key={2021} year={2021} data={alumni23} />
+      <AlumniTable key={2021} year={2021} data={alumni21} />
     </div>
   );
 }
