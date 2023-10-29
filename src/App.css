@@ -1784,6 +1784,32 @@ td, th {
   padding: 10px;
 }
 
+.add-alum {
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 1.2vmax;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  padding: 0.7vmax 1vmax;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease;
+  align-self: flex-end;
+  margin-right: 5vw;
+  margin-top: 2vh;
+}
+
+.add-alum:hover {
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.add-alum a, a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 700px) {
   .alumni-connect {
     font-size: 10px;
@@ -1798,5 +1824,9 @@ td, th {
 
   .responsiveTable tbody tr {
     border: 1px solid #F1B900 !important;
+  }
+
+  .add-alum a {
+    font-size: 14px
   }
 }
