@@ -15,10 +15,12 @@ import DiscordPage from "./pages/redirects/DiscordPage";
 import InstagramPage from "./pages/redirects/InstagramPage";
 import LOLIDPage from "./pages/redirects/LOLIDPage";
 import AlumniConnectPage from "./pages/AlmuniConnectPage";
+import NextTopLoader from 'nextjs-toploader';
 
 function App() {
   return (
     <div className="App">
+      <NextTopLoader color="#F1B900"/>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
