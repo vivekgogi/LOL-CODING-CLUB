@@ -6,5 +6,6 @@ import { firebaseConfig } from "../config/firebaseConfig";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Initialize Firebase
+// eslint-disable-next-line
 const app = initializeApp(firebaseConfig);
 export const dbRef = ref(getDatabase());

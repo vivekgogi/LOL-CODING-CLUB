@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import AlumniTable from "./AlumniTable";
 
 function AlumniConnect() {
+  const [alumni19, setAlumni19] = useState([]);
   const [alumni21, setAlumni21] = useState([]);
   const [alumni22, setAlumni22] = useState([]);
   const [alumni23, setAlumni23] = useState([]);
@@ -11,7 +12,14 @@ function AlumniConnect() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        var snapshot = await get(child(dbRef, "alumni21"));
+        var snapshot = await get(child(dbRef, "alumni19"));
+        if (snapshot.exists()) {
+          setAlumni19(snapshot.val());
+        } else {
+          console.log("No data available");
+        }
+
+        snapshot = await get(child(dbRef, "alumni21"));
         if (snapshot.exists()) {
           setAlumni21(snapshot.val());
         } else {
@@ -49,6 +57,7 @@ function AlumniConnect() {
       <AlumniTable key={2023} year={2023} data={alumni23} />
       <AlumniTable key={2022} year={2022} data={alumni22} />
       <AlumniTable key={2021} year={2021} data={alumni21} />
+      <AlumniTable key={2019} year={2019} data={alumni19} />
     </div>
   );
 }
