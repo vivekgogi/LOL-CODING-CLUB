@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import ComingSoon from "../images/ComingSoon.png";
 import EventCard from "../components/EventCard";
+import BlockchainBlitz from "../images/events/BlockchainBlitz.png";
 
 function UpcomingEvents() {
   const [upcomingEvents] = useState([
+    // {
+    //   image: ComingSoon,
+    //   datetime: "",
+    //   title: "",
+    //   action: "Coming soon",
+    //   registrationform: ""
+    // },
     {
-      image: ComingSoon,
-      datetime: "",
-      title: "",
-      action: "Coming soon",
-      registrationform: ""
+      image: BlockchainBlitz,
+      datetime: "24 Feb 2024",
+      title: "Blockchain Blitz Workshop",
+      action: "Register",
+      registrationform: "https://forms.gle/L1X9ByWhNwGPuxB7A",
     },
   ]);
 

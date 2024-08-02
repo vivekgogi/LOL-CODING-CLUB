@@ -9,27 +9,47 @@ function Explore() {
 
       <ul className="menu">
         <li>
-          <a href="https://lolclubwit.hashnode.dev/newsletter" target="_blanck">
+          <a
+            href="https://lolclubwit.hashnode.dev/newsletter"
+            target="_blanck"
+            rel="noopener noreferrer"
+          >
             Newsletter
           </a>
         </li>
         <li>
-          <a href="https://forms.gle/6keszXqp6ZNGgR6QA" target="_blanck">
+          <a
+            href="https://forms.gle/6keszXqp6ZNGgR6QA"
+            target="_blanck"
+            rel="noopener noreferrer"
+          >
             Write Blog
           </a>
         </li>
         <li>
-          <a href="https://forms.gle/QSMzwVr5PrZJcd6t8" target="_blanck">
+          <a
+            href="https://forms.gle/QSMzwVr5PrZJcd6t8"
+            target="_blanck"
+            rel="noopener noreferrer"
+          >
             Suggestion Box
           </a>
         </li>
         <li>
-          <a href="https://lolclubwit.hashnode.dev/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://lolclubwit.hashnode.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Blogs by LOL
           </a>
         </li>
         <li>
-          <a href="https://hashnode.com/@lolclubwit" target="_blanck">
+          <a
+            href="https://hashnode.com/@lolclubwit"
+            target="_blanck"
+            rel="noopener noreferrer"
+          >
             Hashnode
           </a>
         </li>
@@ -81,7 +101,11 @@ function DirectLinks() {
           <Link to="/team">Our Team</Link>
         </li>
         <li>
-          <a href="https://lolclubwit.hashnode.dev/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://lolclubwit.hashnode.dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Blogs
           </a>
         </li>
@@ -102,8 +126,13 @@ function ConnectUs() {
       {/* <p>
         <i className="fa fa-phone" aria-hidden="true"></i> +91 9876543210
       </p> */}
-      <a href="mailto:lolclubwit@gmail.com" target="_blank" rel="noopener noreferrer">
-        <i className="fa fa-envelope" aria-hidden="true"></i>lolclubwit@gmail.com
+      <a
+        href="mailto:lolclubwit@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="fa fa-envelope" aria-hidden="true"></i>
+        lolclubwit@gmail.com
       </a>
       <div className="socials">
         <a

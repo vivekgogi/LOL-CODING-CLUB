@@ -105,11 +105,11 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div>
+    <div className="temp-drawer">
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>
-            <MenuIcon sx={{ color: "white" }}/>
+            <MenuIcon sx={{ color: "white" }} />
           </Button>
           <Drawer
             anchor={anchor}

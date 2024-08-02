@@ -12,7 +12,7 @@ function Header() {
         <Link to="/">
           <img src={LightLogoLOL} alt="LOL" />
         </Link>
-        
+
         <a
           href="https://witsolapur.org/"
           target="_blank"
@@ -50,7 +50,7 @@ function Header() {
         <Link to="/alumniconnect">Alumni Connect</Link>
       </div>
 
-      <TemporaryDrawer/>
+      <TemporaryDrawer />
       <Outlet />
     </div>
   );
