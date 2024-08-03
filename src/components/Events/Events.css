@@ -1,0 +1,199 @@
+/* ============================================ EVENTS - START ============================================ */
+
+.events-content {
+  padding: 6vmin 0 8vmin 0;
+  background-color: var(--base);
+}
+
+.events-content .section-heading {
+  width: 80vw;
+  margin: 0 auto 4vmin auto;
+  font-size: 2vw;
+  text-align: center;
+  color: var(--primary);
+
+}
+
+.events-content .events-type-description {
+  width: 80vw;
+  margin: 0 auto 4vmin auto;
+  color: var(--secondary);
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  font-size: 1.05vw;
+}
+
+.events-content .events-card-container {
+  width: 80vw;
+  margin: 0 auto 2vmin auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.events-content .events-card-container .card {
+  width: 20vw;
+  padding: 15px;
+  border: 0.6vmin solid #171717;
+  background-color: var(--base);
+  color: var(--secondary);
+  margin-bottom: 4vmin;
+  margin-right: 4vmin;
+  transition: all 0.5s ease 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.events-content .events-card-container .card:hover {
+  cursor: pointer;
+}
+
+.events-content .events-card-container .card img {
+  width: 20vw;
+  height: auto;
+  margin: 0 auto 3vmin auto;
+}
+
+/* Caraousel */
+
+.caraousel .card {
+  width: 20vw;
+  padding: 15px;
+  border: 0.6vmin solid #171717;
+  background-color: var(--base);
+  color: var(--secondary);
+  margin-bottom: 4vmin;
+  margin-right: 4vmin;
+  transition: all 0.5s ease 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caraousel li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.caraousel .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--secondary);
+  padding-top: 30px;
+}
+
+.card .container p {
+  font-size: 0.9vw;
+  font-weight: normal;
+  margin-bottom: 1.2vmin;
+  text-align: center;
+}
+
+.card .container h4 {
+  font-weight: 600;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.card .container .action-btn {
+  text-decoration: none;
+  border: none;
+  background-color: var(--base);
+  padding: 1.5vmin;
+  margin: 3.5vmin 0 2vmin 0;
+}
+
+.card .container .action-btn a {
+  text-decoration: none;
+  font-size: 1.2vw;
+  background-color: var(--base);
+  padding: 1.15vmin 3vmin;
+  transition: all 0.5s ease 0s;
+  border: 0.15vmin solid var(--primary);
+  color: var(--primary);
+}
+
+.card .container .action-btn a:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 700px) {
+  .events-content .section-heading {
+    font-size: 4vw;
+  }
+
+  .events-content .events-type-description {
+    font-size: 2.5vw;
+  }
+
+  .events-content .events-card-container .card {
+    width: 80vw;
+    margin-bottom: 6vmin;
+  }
+
+  .events-content .events-card-container .card img {
+    width: 68vw;
+  }
+
+  .events-content .events-card-container .card .container p {
+    font-size: 2.7vw;
+  }
+
+  .events-content .events-card-container .card .container h4 {
+    font-size: 4.5vw;
+  }
+
+  .events-content .events-card-container .card .container .action-btn {
+    margin: 4vmin 0 2vmin 0;
+  }
+
+  .events-content .events-card-container .card .container .action-btn a {
+    font-size: 3.2vw;
+  }
+
+  .caraousel .card {
+    width: 80vw;
+  }
+
+  .caraousel .container p {
+    font-size: 2.7vw;
+  }
+
+  .caraousel .container h4 {
+    font-size: 4.5vw;
+  }
+
+  .caraousel .container .action-btn {
+    margin: 4vmin 0 2vmin 0;
+  }
+
+  .caraousel .container .action-btn a {
+    font-size: 3.2vw;
+  }
+}
+
+/* Responsiveness - End */
+
+/* ============================================ EVENTS - END ============================================ */

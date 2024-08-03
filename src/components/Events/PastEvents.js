@@ -1,15 +1,24 @@
 import React, { useState } from "react";
-import CodingContest from "../images/events/CodingContest.jpeg";
-import codingcomp from "../images/events/codingcomp.jpg";
-import threejs from "../images/events/3js.png";
-import powerBI from "../images/events/LOLPowerBIWorkshop.png";
-import flutterworkshop from "../images/events/flutterworkshop.jpg";
-import EventCard from "../components/EventCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import CodingContest from "../../images/events/CodingContest.jpeg";
+import codingcomp from "../../images/events/codingcomp.jpg";
+import threejs from "../../images/events/3js.png";
+import flutterworkshop from "../../images/events/flutterworkshop.jpg";
+import powerBI from "../../images/events/LOLPowerBIWorkshop.png";
+import BlockchainBlitz from "../../images/events/BlockchainBlitz.png";
+
+import EventCard from "./EventCard";
+
 function PastEvents() {
   const [upcomingEvents] = useState([
+    {
+      image: BlockchainBlitz,
+      datetime: "24 Feb 2024",
+      title: "Blockchain Blitz Workshop",
+      action: "Register",
+    },
     {
       image: powerBI,
       datetime: "October, 2023",
@@ -87,7 +96,6 @@ function PastEvents() {
             />
           ))}
         </div> */}
-
 
         <div className="caraousel">
           <Carousel

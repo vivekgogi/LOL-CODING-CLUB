@@ -1,0 +1,94 @@
+/* ============================================ MISSION - END ============================================ */
+
+.mission {
+  width: 100%;
+  padding: 3vmin 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: var(--base);
+}
+
+.mission .mission-title {
+  width: 80%;
+  font-size: 2vmax;
+  font-weight: 900;
+  color: crimson;
+  padding-bottom: 7px;
+  border-bottom: 0.4vmax solid crimson;
+  text-align: left;
+}
+
+.mission .mission-content {
+  width: 80%;
+  height: 36vh;
+  padding: 3vmin 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.mission .mission-right img {
+  height: 32vmin;
+  width: auto;
+  border: 1px solid white;
+}
+
+.mission .mission-left {
+  height: 34vmin;
+  padding: 0 7vmin 0 0;
+}
+
+.mission .mission-left ul li {
+  list-style-type: none;
+  margin: 1.2vmin 0 0 0;
+  color: var(--secondary);
+  font-size: 1.3vmax;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+}
+
+.mission .mission-left ul li i {
+  list-style-type: none;
+  color: crimson;
+  margin-right: 1.5vmin;
+  font-size: 1.2vmax;
+}
+
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 700px) {
+
+  .mission .mission-content {
+    flex-direction: column-reverse;
+  }
+
+  .mission .mission-right img {
+    height: 32vmin;
+    width: auto;
+    border: 1px solid white;
+    margin: 3vmin 0;
+  }
+
+  .mission .mission-left {
+    padding: 0 0 0 0;
+    margin: 0 0;
+  }
+
+  .mission .mission-left ul li {
+    font-size: 1.1vmax;
+  }
+
+  .mission .mission-left ul li i {
+    margin-right: 1vmin;
+    font-size: 1.8vw;
+  }
+}
+
+/* Responsiveness - End */
+
+/* ============================================ MISSION - END ============================================ */

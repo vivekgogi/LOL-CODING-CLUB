@@ -1,0 +1,175 @@
+/* ============================================ OVERVIEW - START ============================================ */
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--base)
+}
+
+.overview .overview-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+}
+
+.overview .overview-container .overview-container-top {
+    width: 100%;
+    margin: 5vmin 0;
+    padding: 4vmin 0;
+    border: 1px solid crimson;
+}
+
+.overview .overview-container .overview-container-top h2 {
+    font-size: 2.3vw;
+    color: crimson;
+    text-align: center;
+    margin-bottom: 3vmin;
+}
+
+.overview .overview-container .overview-container-top .events {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.overview .overview-container .overview-container-top .events p {
+    text-decoration: none;
+    width: 14vw;
+    padding: 1.3vmin 0;
+    margin: 2vmin;
+    color: white;
+    font-size: 1.3vw;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid white;
+}
+
+.overview .overview-container .overview-container-top .events p i {
+    font-size: 1.2vmax;
+    margin: 0 1vmin 0 0;
+}
+
+.overview .overview-container .overview-container-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border: 1px solid var(--primary);
+    margin: 5vmin 0 10vmin 0;
+}
+
+.overview .overview-container .overview-container-bottom .overview-container-bottom-left {
+    width: 33vw;
+    height: auto;
+    padding: 5vmin;
+    color: var(--secondary);
+}
+
+.overview .overview-container .overview-container-bottom .overview-container-bottom-left h2 {
+    font-size: 2vw;
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+.overview .overview-container .overview-container-bottom .overview-container-bottom-left p {
+    padding: 1.5vmax 0;
+    font-size: 1.15vmax;
+    color: var(--secondary);
+    letter-spacing: 0.3px;
+    font-weight: 300;
+}
+
+.overview .overview-container .overview-container-bottom .overview-container-bottom-right {
+    width: 33vw;
+    height: auto;
+    padding: 5vmin;
+    color: var(--secondary);
+}
+
+.overview .overview-container .overview-container-bottom .overview-container-bottom-right h2 {
+    font-size: 2vw;
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+.overview .overview-container .overview-container-bottom .overview-container-bottom-right p {
+    padding: 1.5vmax 0;
+    font-size: 1.15vmax;
+    color: var(--secondary);
+    letter-spacing: 0.3px;
+    font-weight: 300;
+}
+
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 700px) {
+    .overview .overview-container .overview-container-top {
+        margin: 5vmin 0 2vmin 0;
+    }
+
+    .overview .overview-container .overview-container-top h2 {
+        padding: 0 4vmin;
+        font-size: 4vw;
+    }
+
+    .overview .overview-container .overview-container-top .events {
+        flex-wrap: wrap;
+    }
+
+    .overview .overview-container .overview-container-top .events p {
+        width: 25vw;
+        font-size: 2.3vw;
+        border-radius: 0.5px;
+    }
+
+    .overview .overview-container .overview-container-top .events p i {
+        font-size: 1.2vmax;
+        margin: 0 1vmin 0 0;
+    }
+
+    .overview .overview-container .overview-container-bottom {
+        flex-direction: column;
+    }
+
+    .overview .overview-container .overview-container-bottom .overview-container-bottom-left {
+        width: 65vw;
+        padding: 5vmin 0 0 0;
+    }
+
+    .overview .overview-container .overview-container-bottom .overview-container-bottom-left h2 {
+        font-size: 4.5vw;
+    }
+
+    .overview .overview-container .overview-container-bottom .overview-container-bottom-left p {
+        padding: 1.5vmax 0;
+        font-size: 1.1vmax;
+    }
+
+    .overview .overview-container .overview-container-bottom .overview-container-bottom-right {
+        width: 65vw;
+        padding: 2vmin 0;
+    }
+
+    .overview .overview-container .overview-container-bottom .overview-container-bottom-right h2 {
+        font-size: 4.5vw;
+    }
+
+    .overview .overview-container .overview-container-bottom .overview-container-bottom-right p {
+        width: 65vw;
+        padding: 5vmin 0;
+    }
+}
+
+/* Responsiveness - End */
+
+/* ============================================ OVERVIEW - END ============================================ */

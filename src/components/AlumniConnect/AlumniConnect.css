@@ -1,0 +1,98 @@
+/* ============================================== ALUMNI CONNECT - START ============================================*/
+
+.alumni-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.alumni-table {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    gap: 25px;
+    text-align: left;
+}
+
+.alumni-table th,
+h1 {
+    color: #F1B900;
+    text-align: center;
+}
+
+.alumni-table a,
+a:visited {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.alumni-table a:hover {
+    color: #F1B900;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+td,
+th {
+    border: 1px solid #F1B900;
+    padding: 10px;
+}
+
+.add-alum {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1.2vmax;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    padding: 0.7vmax 1vmax;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease;
+    align-self: flex-end;
+    margin-right: 5vw;
+    margin-top: 2vh;
+}
+
+.add-alum:hover {
+    cursor: pointer;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+.add-alum a,
+a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 700px) {
+    .alumni-connect {
+        font-size: 10px;
+    }
+
+    .alumni-connect a {
+        font-size: 10px;
+    }
+
+    .tdBefore {
+        color: #F1B900;
+    }
+
+    .responsiveTable tbody tr {
+        border: 1px solid #F1B900 !important;
+    }
+
+    .add-alum a {
+        font-size: 14px
+    }
+}
+
+/* ============================================== ALUMNI CONNECT - END ============================================*/

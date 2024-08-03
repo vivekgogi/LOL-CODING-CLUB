@@ -1,5 +1,5 @@
-import React from "react";
-import vision from "../images/vision.jpg";
+import vision from "../../images/vision.jpg";
+import "./Vision.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

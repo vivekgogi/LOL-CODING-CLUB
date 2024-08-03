@@ -1,0 +1,82 @@
+/* ============================================ ABOUTLOL - START ============================================ */
+
+.about-lol {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--base);
+}
+
+.about-lol .about-lol-heading {
+  width: 80vw;
+  font-size: 5vw;
+  font-weight: 900;
+  color: crimson;
+  text-align: center;
+  margin: 4vmin auto 0 auto;
+}
+
+.about-lol .about-lol-sub-heading {
+  width: 80vw;
+  font-size: 1.3vw;
+  font-weight: 600;
+  color: var(--secondary);
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.about-lol .about-lol-content {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--base);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 3.7vmin 0 6vmin 0;
+}
+
+.about-lol .about-lol-content .about-lol-content-img img {
+  width: 22vw;
+  height: auto;
+  border-radius: 5%;
+  margin-bottom: 1.5vmin;
+  margin-top: 4.5vmin;
+  margin: 4.5vmin 10vmin 1.5vmin 10vmin;
+}
+
+.about-lol .about-lol-content .about-lol-content-text {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 700px) {
+
+  .about-lol .about-lol-heading {
+    font-size: 9vw;
+  }
+
+  .about-lol .about-lol-sub-heading {
+    font-size: 3vw;
+  }
+
+  .about-lol .about-lol-content {
+    flex-direction: column;
+  }
+
+  .about-lol .about-lol-content .about-lol-content-img img {
+    width: 50vw;
+    margin-top: 10vmin;
+  }
+
+  .about-lol .about-lol-content .about-lol-content-text {
+    font-size: 7vw;
+    margin-bottom: 10vmin;
+  }
+}
+
+/* Responsiveness - End */
+
+/* ============================================ ABOUTLOL - END ============================================ */

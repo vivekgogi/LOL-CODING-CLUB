@@ -1,7 +1,8 @@
-import { dbRef } from "../utils/firebase";
-import { child, get } from "firebase/database";
 import { useState, useEffect } from "react";
+import { child, get } from "firebase/database";
+import { dbRef } from "../../utils/firebase";
 import AlumniTable from "./AlumniTable";
+import "./AlumniConnect.css";
 
 function AlumniConnect() {
   const [alumni19, setAlumni19] = useState([]);
@@ -50,7 +51,11 @@ function AlumniConnect() {
   return (
     <div className="alumni-connect">
       <div className="add-alum" data-cursor-text="Join Us!">
-        <a href="https://forms.gle/dQo5U4ZtBwKiF4G88" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://forms.gle/dQo5U4ZtBwKiF4G88"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Add yourself!
         </a>
       </div>

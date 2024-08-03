@@ -1,0 +1,247 @@
+/* ============================================ FOOTER - START ============================================ */
+
+footer {
+  width: 100%;
+  letter-spacing: 0.5px;
+  background-color: #171717;
+}
+
+footer .prefooter {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  color: var(--secondary);
+}
+
+footer .prefooter .connect-us {
+  width: 30%;
+}
+
+footer .prefooter .sub-prefooter {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .prefooter .direct-links .menu {
+  list-style-type: none;
+}
+
+footer .prefooter .direct-links .menu li {
+  margin: 0 0 1vmin 0;
+}
+
+footer .prefooter .direct-links .menu li a {
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: 300;
+  color: var(--secondary);
+  transition: all 0.5s ease 0s;
+}
+
+footer .prefooter .direct-links .menu li a:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+footer .prefooter .explore .menu {
+  list-style-type: none;
+}
+
+footer .prefooter .explore .menu li {
+  margin: 0 0 1vmin 0;
+
+}
+
+footer .prefooter .explore .menu li a {
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: 300;
+  font-weight: 300;
+  color: var(--secondary);
+  transition: all 0.5s ease 0s;
+}
+
+footer .prefooter .explore .menu li a:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+footer .prefooter .events .menu {
+  list-style-type: none;
+}
+
+footer .prefooter .events .menu li {
+  margin: 0 0 1vmin 0;
+
+}
+
+footer .prefooter .events .menu li a {
+  text-decoration: none;
+  font-size: 1vw;
+  font-weight: 300;
+  font-weight: 300;
+  color: var(--secondary);
+  transition: all 0.5s ease 0s;
+}
+
+footer .prefooter .events .menu li a:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+footer .prefooter .explore,
+footer .prefooter .events,
+footer .prefooter .direct-links,
+footer .prefooter .connect-us {
+  padding: 4vmin 0;
+}
+
+footer .prefooter .explore h3,
+footer .prefooter .events h3,
+footer .prefooter .direct-links h3,
+footer .prefooter .connect-us h3 {
+  padding: 0 0 2vmin 0;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+footer .prefooter .connect-us p {
+  font-size: 1vw;
+  font-weight: 300;
+  margin: 0 0 1vmin 0;
+}
+
+footer .prefooter .connect-us a {
+  font-size: 1vw;
+  font-weight: 300;
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+footer .prefooter .connect-us a:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+footer .prefooter .connect-us i {
+  color: var(--secondary);
+  margin: 0 1vmin 0 0;
+  font-size: 1vw;
+}
+
+footer .prefooter .connect-us .socials i {
+  color: var(--secondary);
+  margin: 2vmin 2vmin 0 0;
+  font-size: 1vw;
+}
+
+footer .prefooter .connect-us .socials i:hover {
+  color: var(--primary);
+  cursor: pointer;
+  position: relative;
+  bottom: 1px;
+}
+
+footer .footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #171717;
+}
+
+footer .footer p {
+  color: var(--secondary);
+  width: 100%;
+  padding: 3vmin 0;
+  text-align: center;
+  font-size: 1vw;
+}
+
+footer .footer i {
+  color: var(--secondary);
+  font-size: 1vw;
+}
+
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 700px) {
+  footer .prefooter {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  footer .prefooter .sub-prefooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+  }
+
+  footer .prefooter .explore,
+  footer .prefooter .events,
+  footer .prefooter .direct-links,
+  footer .prefooter .connect-us {
+    width: 80%;
+    text-align: center;
+  }
+
+  footer .prefooter .connect-us {
+    margin-top: 2vmin;
+  }
+
+  footer .prefooter .explore h3,
+  footer .prefooter .events h3,
+  footer .prefooter .direct-links h3,
+  footer .prefooter .connect-us h3 {
+    font-size: 3vw;
+  }
+
+  footer .prefooter .direct-links .menu li,
+  footer .prefooter .explore .menu li,
+  footer .prefooter .events .menu li {
+    margin: 0 0 0vmin 0;
+  }
+
+  footer .prefooter .direct-links .menu li a,
+  footer .prefooter .explore .menu li a,
+  footer .prefooter .events .menu li a {
+    font-size: 2.5vw;
+
+  }
+
+  footer .prefooter .connect-us p,
+  footer .prefooter .connect-us a {
+    font-size: 2.5vw;
+    line-height: 4.5vmin;
+    margin: 0;
+  }
+
+  footer .prefooter .connect-us i {
+    font-size: 2.5vw;
+  }
+
+  footer .prefooter .connect-us .socials i {
+    margin: 4% 2vmin 0 2vmin;
+    font-size: 3vw;
+  }
+
+  footer .footer p {
+    font-size: 1.8vw;
+  }
+
+  footer .footer i {
+    font-size: 1.8vw;
+  }
+
+}
+
+/* Responsiveness - End */
+
+/* ============================================ FOOTER - END ============================================ */

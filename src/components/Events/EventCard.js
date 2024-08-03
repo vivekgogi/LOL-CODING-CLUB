@@ -1,5 +1,3 @@
-import React from "react";
-
 function EventCard(props) {
   return (
     <>
@@ -10,7 +8,13 @@ function EventCard(props) {
           <p>{props.datetime}</p>
           <h4>{props.title}</h4>
           <button className="action-btn">
-            <a href={props.registrationform} target="_blank" rel="noopener noreferrer">{props.action}</a>
+            <a
+              href={props.registrationform}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {props.action}
+            </a>
           </button>
         </div>
       </div>

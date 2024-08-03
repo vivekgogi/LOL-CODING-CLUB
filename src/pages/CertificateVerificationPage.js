@@ -1,7 +1,7 @@
-import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import ResponsiveIframeContainer from "../components/ResponsiveIframeContainer";
+import Header from "../components/Header/Header";
+import ResponsiveIframeContainer from "../components/Certificate/ResponsiveIframeContainer";
+import Footer from "../components/Footer/Footer";
+
 import { dbRef } from "../utils/firebase";
 import { child, get } from "firebase/database";
 import { useState, useEffect } from "react";

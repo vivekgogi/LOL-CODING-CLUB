@@ -1,0 +1,203 @@
+/* ============================================ TEAM - START ============================================ */
+
+.teams {
+  background-color: var(--base);
+  padding: 4vmin 0 8vmin 0;
+}
+
+.teams-heading {
+  width: 80vw;
+  font-size: 4.2vw;
+  font-weight: 900;
+  color: crimson;
+  text-align: center;
+  background-color: var(--base);
+  margin: 0 auto 4vmin auto;
+}
+
+.teams-sub-heading {
+  width: 80vw;
+  font-size: 1.3vw;
+  font-weight: 600;
+  color: var(--secondary);
+  text-align: center;
+  margin: 0 auto 0 auto;
+}
+
+.teams-content {
+  padding: 8vmin 0 8vmin 0;
+  background-color: var(--base);
+}
+
+details {
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+details summary span {
+  margin-left: 0.5rem;
+}
+
+.teams-content .section-heading {
+  width: 80%;
+  margin: auto;
+  color: var(--primary);
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 3rem auto;
+  border: 2px solid var(--primary);
+  padding: 1rem;
+}
+
+.teams-content .profile-card-container {
+  width: 80vw;
+  margin: 0 auto 2vmin auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  transition: 0.3s;
+}
+
+.teams-content .profile-card-container .profile {
+  width: 22%;
+  padding: 4vmin 0 0 0;
+  border: 0.35vmin solid #171717;
+  border: 0.3vmin solid var(--secondary);
+  background-color: var(--base);
+  color: var(--secondary);
+  margin-bottom: 4vmin;
+  margin-right: 4vmin;
+  transition: all 0.5s ease 0s;
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.teams-content .profile-card-container .profile .profile-photo img {
+  display: inline-block;
+  width: 55%;
+  height: auto;
+  margin: 3vmin auto 6vmin auto;
+  position: relative;
+  z-index: 1;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.7vmin var(--primary);
+  transition: all 0.5s ease 0s;
+  transform: scale(1);
+}
+
+.teams-content .profile-card-container .profile:hover .profile-photo img {
+  transform: scale(1.15);
+}
+
+.teams-content .profile-card-container .profile .profile-info .title {
+  color: var(--secondary);
+  font-size: 1.4vw;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 1.5vmin 0;
+}
+
+.teams-content .profile-card-container .profile .profile-info .designation {
+  color: var(--primary);
+  font-size: 1.2vw;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 2.5vmin 0;
+}
+
+.social-icons {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.5s ease;
+  background-color: #171717;
+}
+
+.social-icons li a {
+
+  text-decoration: none;
+}
+
+.social-icons li i {
+  display: block;
+  padding: 1.7vmin;
+  font-size: 3.5vmin;
+  color: var(--secondary);
+  transition: all 0.5s ease;
+}
+
+.social-icons li i:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 700px) {
+
+  .teams-heading {
+    width: 80vw;
+    font-size: 9vw;
+    font-weight: 900;
+    color: crimson;
+    text-align: center;
+    background-color: var(--base);
+    margin: 0 auto 4vmin auto;
+  }
+
+  .teams-sub-heading {
+    font-size: 3.6vw;
+    font-weight: 500;
+    line-height: 5vmin;
+  }
+
+  details {
+    width: 100%;
+  }
+  
+  .teams-content .section-heading {
+    width: 60%;
+    font-size: 5vw;
+  }
+
+  .teams-content .profile-card-container {
+    width: 80vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .teams-content .profile-card-container .profile {
+    width: 44%;
+    margin-bottom: 6vmin;
+  }
+
+  .teams-content .profile-card-container .profile .profile-photo img {
+    width: 20vw;
+    margin-bottom: 4vmin;
+  }
+
+  .teams-content .profile-card-container .profile .profile-info .title {
+    font-size: 3.2vw;
+  }
+
+  .teams-content .profile-card-container .profile .profile-info .designation {
+    font-size: 3vw;
+  }
+
+  .social-icons li i {
+    font-size: 4vmin;
+  }
+}
+
+/* Responsiveness - End */
+
+/* ============================================ TEAM - END ============================================ */

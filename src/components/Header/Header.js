@@ -1,9 +1,9 @@
 import React from "react";
-import LightLogoLOL from "../images/LightLogoLOL.jpg";
-import LogoWIT from "../images/LogoWIT.png";
 import { Outlet, Link } from "react-router-dom";
-import "../App.css";
+import "./Header.css";
 import TemporaryDrawer from "./TemporaryDrawer";
+import LightLogoLOL from "../../images/LightLogoLOL.jpg";
+import LogoWIT from "../../images/LogoWIT.png";
 
 function Header() {
   return (

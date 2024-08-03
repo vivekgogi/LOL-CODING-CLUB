@@ -1,4 +1,5 @@
-import React from "react";
+import "./Feature.css";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -18,6 +19,8 @@ function EventContainer() {
         className="register-btn"
         href="https://forms.gle/L1X9ByWhNwGPuxB7A"
         target="_black"
+        data-cursor-text="Register Now"
+        data-cursor
       >
         Register Now
       </a>

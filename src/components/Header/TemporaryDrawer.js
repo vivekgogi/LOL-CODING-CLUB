@@ -5,9 +5,8 @@ import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -36,12 +35,19 @@ export default function TemporaryDrawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
+      <List sx={{ color: "white", backgroundColor: "black" }}>
         <ListItem>
           <ListItemButton>
-            <Link to="/">
-              <ListItemText>LOL Home</ListItemText>
-            </Link>
+            <a
+              href="/"
+              style={{
+                color: "white",
+                backgroundColor: "black",
+                textDecoration: "none",
+              }}
+            >
+              LOL Home
+            </a>
           </ListItemButton>
         </ListItem>
 
@@ -51,33 +57,59 @@ export default function TemporaryDrawer() {
               href="https://witsolapur.org/"
               target="_blank"
               rel="noopener noreferrer"
+              style={{
+                color: "white",
+                backgroundColor: "black",
+                textDecoration: "none",
+              }}
             >
-              <ListItemText>WIT Home</ListItemText>
+              WIT Home
             </a>
           </ListItemButton>
         </ListItem>
 
         <ListItem>
           <ListItemButton>
-            <Link to="/about">
-              <ListItemText>About</ListItemText>
-            </Link>
+            <a
+              href="/about"
+              style={{
+                color: "white",
+                backgroundColor: "black",
+                textDecoration: "none",
+              }}
+            >
+              About
+            </a>
           </ListItemButton>
         </ListItem>
 
         <ListItem>
           <ListItemButton>
-            <Link to="/events">
-              <ListItemText>Events</ListItemText>
-            </Link>
+            <a
+              href="/events"
+              style={{
+                color: "white",
+                backgroundColor: "black",
+                textDecoration: "none",
+              }}
+            >
+              Events
+            </a>
           </ListItemButton>
         </ListItem>
 
         <ListItem>
           <ListItemButton>
-            <Link to="/team">
-              <ListItemText>Team</ListItemText>
-            </Link>
+            <a
+              href="/team"
+              style={{
+                color: "white",
+                backgroundColor: "black",
+                textDecoration: "none",
+              }}
+            >
+              Team
+            </a>
           </ListItemButton>
         </ListItem>
 
@@ -87,15 +119,25 @@ export default function TemporaryDrawer() {
               href="https://lolclubwit.hashnode.dev/"
               target="_blank"
               rel="noopener noreferrer"
+              sx={{ color: "white", backgroundColor: "black" }}
             >
-              <ListItemText>Blog</ListItemText>
+              Blog
             </a>
           </ListItemButton>
         </ListItem>
 
         <ListItem>
           <ListItemButton>
-            <Link to="/alumniconnect">Alumni Connect</Link>
+            <a
+              href="/alumniconnect"
+              style={{
+                color: "white",
+                backgroundColor: "black",
+                textDecoration: "none",
+              }}
+            >
+              Alumni Connect
+            </a>
           </ListItemButton>
         </ListItem>
 
@@ -105,11 +147,28 @@ export default function TemporaryDrawer() {
   );
 
   return (
-    <div className="temp-drawer">
+    <div
+      className="temp-drawer"
+      sx={{ color: "white", backgroundColor: "black" }}
+    >
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>
-            <MenuIcon sx={{ color: "white" }} />
+          <Button
+            onClick={toggleDrawer(anchor, true)}
+            sx={{ color: "white", backgroundColor: "black" }}
+          >
+            <MenuIcon
+              sx={{
+                color: "white",
+                backgroundColor: "black",
+                width: 30,
+                height: 30,
+                marginTop: "25px",
+                border: "2px solid white",
+                borderRadius: "8px",
+                padding: "3px",
+              }}
+            />
           </Button>
           <Drawer
             anchor={anchor}

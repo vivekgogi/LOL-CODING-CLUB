@@ -1,0 +1,123 @@
+/* ============================================  HERO - START ============================================ */
+
+.hero {
+  width: 100vw;
+  height: 91vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  background-color: var(--base);
+}
+
+.hero .hero-left {
+  width: 40vw;
+  margin: 0 0 0 10vw;
+}
+
+.hero .hero-left .title img {
+  width: 20vw;
+  height: auto;
+}
+
+.hero .hero-left .subtitle {
+  color: var(--primary);
+  font-family: "Bree Serif", serif;
+  font-size: 2.7vw;
+  font-weight: 900;
+  letter-spacing: 0.35vmax;
+}
+
+.hero .hero-left .description {
+  color: var(--secondary);
+  font-size: 1.1vw;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin: 1.5vmin 0 5vmin 0;
+  line-height: 1.7vw;
+}
+
+.hero .hero-left .description span {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.hero .hero-left .register-btn a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  padding: 0.7vmax 1vmax;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease;
+  font-size: 1.2vmax;
+}
+
+.hero .hero-left .register-btn a:hover {
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.hero .hero-right {
+  width: 40vw;
+  margin: 0 10vw 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+}
+
+.hero .hero-right img {
+  width: 30vmax;
+  height: auto;
+}
+
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 700px) {
+  .hero {
+    height: 58vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .hero .hero-left {
+    width: 80%;
+    text-align: center;
+    margin: 0 0 2vmin 0;
+  }
+
+  .hero .hero-left .title img {
+    width: 40vw;
+  }
+
+  .hero .hero-left .subtitle {
+    font-size: 5.3vw;
+  }
+
+  .hero .hero-left .description {
+    font-size: 2.4vw;
+    line-height: 3.3vw;
+  }
+
+  .hero .hero-right {
+    width: 80%;
+    margin: 0 0 6vmin 0;
+  }
+
+  .hero .hero-right img {
+    width: 24vmax;
+    margin: auto;
+  }
+}
+
+/* Responsiveness - End */
+
+/* ============================================ HERO - END ============================================ */

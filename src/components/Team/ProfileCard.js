@@ -1,5 +1,3 @@
-import React from "react";
-
 function ProfileCard({ image, name, designation, linkedin }) {
   return (
     <>

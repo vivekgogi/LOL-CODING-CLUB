@@ -1,39 +1,40 @@
 import React, { useState } from "react";
-import ProfileCard from "../components/ProfileCard";
+import ProfileCard from "./ProfileCard";
+import "./Team.css";
 
-import AkshitaJoshi from "../images/FoundingMembers/AkshitaJoshi.jpg";
-import SanyamRawaneJain from "../images/FoundingMembers/SanyamRawaneJain.jpg";
-import VarunLohade from "../images/FoundingMembers/VarunLohade.jpg";
-import AkarshaJain from "../images/FoundingMembers/AkarshaJain.jpg";
-import ChetasRaulkar from "../images/FoundingMembers/ChetasRaulkar.png";
-import DurgeshKudalkar from "../images/FoundingMembers/DurgeshKudalkar.jpg";
-import RajasDaryapurkar from "../images/FoundingMembers/RajasDaryapurkar.jpg";
-import PushkarKonasirasgi from "../images/FoundingMembers/PushkarKonasirasgi.JPG";
-import MitaliLade from "../images/FoundingMembers/MitaliLade.jpg";
+import AkshitaJoshi from "../../images/FoundingMembers/AkshitaJoshi.jpg";
+import SanyamRawaneJain from "../../images/FoundingMembers/SanyamRawaneJain.jpg";
+import VarunLohade from "../../images/FoundingMembers/VarunLohade.jpg";
+import AkarshaJain from "../../images/FoundingMembers/AkarshaJain.jpg";
+import ChetasRaulkar from "../../images/FoundingMembers/ChetasRaulkar.png";
+import DurgeshKudalkar from "../../images/FoundingMembers/DurgeshKudalkar.jpg";
+import RajasDaryapurkar from "../../images/FoundingMembers/RajasDaryapurkar.jpg";
+import PushkarKonasirasgi from "../../images/FoundingMembers/PushkarKonasirasgi.JPG";
+import MitaliLade from "../../images/FoundingMembers/MitaliLade.jpg";
 
-import ChinmayAnnadate from "../images/CommitteeMembers2023to2024/ChinmayAnnadate.jpg";
-import LaxmiKurapati from "../images/CommitteeMembers2023to2024/LaxmiKurapati.jpg";
-import VivekGogi from "../images/CommitteeMembers2023to2024/VivekGogi.jpg";
-import PratikshaKasliwal from "../images/CommitteeMembers2023to2024/PratikshaKasliwal.jpg";
-import VarunPalrecha from "../images/CommitteeMembers2023to2024/VarunPalrecha.JPG";
-import YashGosavi from "../images/CommitteeMembers2023to2024/YashGosavi.jpg";
-import SakshiBidwai from "../images/CommitteeMembers2023to2024/SakshiBidwai.png";
-import AdityaGadekar from "../images/CommitteeMembers2023to2024/AdityaGadekar.png";
-import SuneetNankani from "../images/CommitteeMembers2023to2024/SuneetNankani.jpg";
-import LavanyaIndapure from "../images/CommitteeMembers2023to2024/LavanyaIndapure.jpg";
-import SrushtiWalli from "../images/CommitteeMembers2023to2024/SrushtiWalli.jpg";
-import TanmayKanhed from "../images/CommitteeMembers2023to2024/TanmayKanhed.jpeg";
-import PourneemaKulkarni from "../images/CommitteeMembers2023to2024/PourneemaKulkarni.jpg";
-import AbhayShankur from "../images/CommitteeMembers2023to2024/AbhayShankur.jpg";
-import SiddharthJain from "../images/CommitteeMembers2023to2024/SiddharthJain.jpg";
-import MrudulaLokhande from "../images/CommitteeMembers2023to2024/MrudulaLokhande.jpg";
-import AryanBhandari from "../images/CommitteeMembers2023to2024/AryanBhandari.jpeg";
-import OmJain from "../images/CommitteeMembers2023to2024/OmJain.jpg";
-import JahnaviJain from "../images/CommitteeMembers2023to2024/JahnaviJain.jpg";
-import AkashPawar from "../images/CommitteeMembers2023to2024/AkashPawar.jpg";
-import TrushikaBasude from "../images/CommitteeMembers2023to2024/TrushikaBasude.jpg";
-import ShrutiPawar from "../images/CommitteeMembers2023to2024/ShrutiPawar.jpeg";
-import ArpitaBaraskar from "../images/CommitteeMembers2023to2024/ArpitaBaraskar.jpg";
+import ChinmayAnnadate from "../../images/CommitteeMembers2023to2024/ChinmayAnnadate.jpg";
+import LaxmiKurapati from "../../images/CommitteeMembers2023to2024/LaxmiKurapati.jpg";
+import VivekGogi from "../../images/CommitteeMembers2023to2024/VivekGogi.jpg";
+import PratikshaKasliwal from "../../images/CommitteeMembers2023to2024/PratikshaKasliwal.jpg";
+import VarunPalrecha from "../../images/CommitteeMembers2023to2024/VarunPalrecha.JPG";
+import YashGosavi from "../../images/CommitteeMembers2023to2024/YashGosavi.jpg";
+import SakshiBidwai from "../../images/CommitteeMembers2023to2024/SakshiBidwai.png";
+import AdityaGadekar from "../../images/CommitteeMembers2023to2024/AdityaGadekar.png";
+import SuneetNankani from "../../images/CommitteeMembers2023to2024/SuneetNankani.jpg";
+import LavanyaIndapure from "../../images/CommitteeMembers2023to2024/LavanyaIndapure.jpg";
+import SrushtiWalli from "../../images/CommitteeMembers2023to2024/SrushtiWalli.jpg";
+import TanmayKanhed from "../../images/CommitteeMembers2023to2024/TanmayKanhed.jpeg";
+import PourneemaKulkarni from "../../images/CommitteeMembers2023to2024/PourneemaKulkarni.jpg";
+import AbhayShankur from "../../images/CommitteeMembers2023to2024/AbhayShankur.jpg";
+import SiddharthJain from "../../images/CommitteeMembers2023to2024/SiddharthJain.jpg";
+import MrudulaLokhande from "../../images/CommitteeMembers2023to2024/MrudulaLokhande.jpg";
+import AryanBhandari from "../../images/CommitteeMembers2023to2024/AryanBhandari.jpeg";
+import OmJain from "../../images/CommitteeMembers2023to2024/OmJain.jpg";
+import JahnaviJain from "../../images/CommitteeMembers2023to2024/JahnaviJain.jpg";
+import AkashPawar from "../../images/CommitteeMembers2023to2024/AkashPawar.jpg";
+import TrushikaBasude from "../../images/CommitteeMembers2023to2024/TrushikaBasude.jpg";
+import ShrutiPawar from "../../images/CommitteeMembers2023to2024/ShrutiPawar.jpeg";
+import ArpitaBaraskar from "../../images/CommitteeMembers2023to2024/ArpitaBaraskar.jpg";
 
 function Team() {
   const [FoundingMembers] = useState([
@@ -246,41 +247,42 @@ function Team() {
       </h3>
 
       <div id="team" className="teams-content">
-        <div className="section-heading">
-          <h3 data-aos="slide-right" data-aos-duration="2500">
-            LOL CODING CLUB COMMITTEE 2023-24
-          </h3>
-        </div>
+        {/* <details open> */}
+        <details>
+          <summary className="section-heading">
+            <span>LOL CODING CLUB COMMITTEE 2023-24</span>
+          </summary>
 
-        <div className="profile-card-container">
-          {CommitteeMembers2023to2024.map((member, index) => (
-            <ProfileCard
-              key={index}
-              image={member.image}
-              name={member.name}
-              designation={member.designation}
-              linkedin={member.linkedin}
-            />
-          ))}
-        </div>
+          <div className="profile-card-container">
+            {CommitteeMembers2023to2024.map((member, index) => (
+              <ProfileCard
+                key={index}
+                image={member.image}
+                name={member.name}
+                designation={member.designation}
+                linkedin={member.linkedin}
+              />
+            ))}
+          </div>
+        </details>
 
-        <div className="section-heading">
-          <h3 data-aos="slide-right" data-aos-duration="2500">
-            LOL CODING CLUB FOUNDING MEMBERS
-          </h3>
-        </div>
+        <details>
+          <summary className="section-heading">
+            <span>LOL CODING CLUB FOUNDING MEMBERS 2022-23</span>
+          </summary>
 
-        <div className="profile-card-container">
-          {FoundingMembers.map((member, index) => (
-            <ProfileCard
-              key={index}
-              image={member.image}
-              name={member.name}
-              designation={member.designation}
-              linkedin={member.linkedin}
-            />
-          ))}
-        </div>
+          <div className="profile-card-container">
+            {FoundingMembers.map((member, index) => (
+              <ProfileCard
+                key={index}
+                image={member.image}
+                name={member.name}
+                designation={member.designation}
+                linkedin={member.linkedin}
+              />
+            ))}
+          </div>
+        </details>
       </div>
     </div>
   );

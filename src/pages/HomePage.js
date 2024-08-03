@@ -1,8 +1,7 @@
-import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Feature from "../components/Feature";
+import Header from "../components/Header/Header";
+import Hero from "../components/Hero/Hero";
+import Feature from "../components/Feature/Feature";
+import Footer from "../components/Footer/Footer";
 
 function HomePage() {
   return (

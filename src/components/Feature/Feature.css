@@ -1,0 +1,203 @@
+/* ============================================ FEATURE - START ============================================ */
+
+.feature {
+  background-color: var(--base);
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 5vmin 0 10vmin 0;
+}
+
+.feature .event-container {
+  height: 60vh;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: var(--secondary);
+  border: 1px solid white;
+  text-align: center;
+}
+
+.feature .event-container .event-info h1 {
+  margin: 4vmin 0;
+  font-size: 2.5vw;
+  color: var(--secondary);
+}
+
+.feature .event-container .event-info h2 {
+  margin: 2vmin 0;
+  font-size: 2vw;
+  color: var(--primary);
+  font-weight: bolder;
+}
+
+.feature .event-container .event-info p {
+  margin: 0.7vmin 0;
+  font-size: 1.2vw;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.feature .event-container a {
+  text-decoration: none;
+  margin: 2.5vmin 0 6vmin 0;
+  padding: 1.2vmin 2vmin;
+  font-size: 1.2vw;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.feature .event-container a:hover {
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.feature .explore-container {
+  height: 60vh;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.feature .explore-container h1 {
+  margin: 0 0 2vmin 0;
+  font-size: 2.5vw;
+  color: var(--primary);
+}
+
+.feature .explore-container .news-letter-hashnode,
+.feature .explore-container .write-blog,
+.feature .explore-container .suggestion-box,
+.feature .explore-container .follow-hashnode {
+  width: 60%;
+  margin: 1.6vmin 0;
+  padding: 1.2vmin 2vmin;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid var(--secondary);
+  font-size: 1.1vw;
+}
+
+.feature .explore-container .news-letter-hashnode a,
+.feature .explore-container .write-blog a,
+.feature .explore-container .suggestion-box a,
+.feature .explore-container .follow-hashnode a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.feature .explore-container .news-letter-hashnode:hover,
+.feature .explore-container .write-blog:hover,
+.feature .explore-container .follow-hashnode:hover,
+.feature .explore-container .suggestion-box:hover {
+  cursor: pointer;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.feature .explore-container .news-letter-hashnode i,
+.feature .explore-container .write-blog i,
+.feature .explore-container .follow-hashnode i,
+.feature .explore-container .suggestion-box i {
+  margin: 0 1.5vmin;
+}
+
+.feature .explore-container .socials {
+  width: 60%;
+  margin: 2.5vmin 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-size: 1.5vw;
+}
+
+.feature .explore-container .socials a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.feature .explore-container .socials i:hover {
+  cursor: pointer;
+  position: relative;
+  bottom: 1px;
+  color: var(--secondary);
+}
+
+/* Responsiveness - Start */
+
+@media only screen and (max-width: 600px) {
+  .feature {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .feature .event-container {
+    width: 80vw;
+  }
+
+  .feature .event-container .event-info h1 {
+    font-size: 6vw;
+  }
+
+  .feature .event-container .event-info h2 {
+    font-size: 4.4vw;
+  }
+
+  .feature .event-container .event-info p {
+    font-size: 3vw;
+  }
+
+  .feature .event-container a {
+    font-size: 3vw;
+  }
+
+  .feature .explore-container {
+    width: 80vw;
+    padding: 10vmin 0 6vmin 0;
+  }
+
+  .feature .explore-container h1 {
+    font-size: 6vw;
+  }
+
+  .feature .explore-container .news-letter-hashnode,
+  .feature .explore-container .write-blog,
+  .feature .explore-container .suggestion-box,
+  .feature .explore-container .follow-hashnode {
+    margin: 2vmin 0;
+    padding: 2vmin 2vmin;
+    width: 48%;
+    font-size: 3vw;
+  }
+
+  .feature .explore-container .socials {
+    width: 48%;
+    font-size: 4.5vw;
+  }
+}
+
+/* Responsiveness - End */
+
+/* ============================================ FEATURE - END ============================================ */

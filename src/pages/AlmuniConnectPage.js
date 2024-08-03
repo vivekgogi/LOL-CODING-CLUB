@@ -1,6 +1,6 @@
-import AlumniConnect from "../components/AlmuniConnect";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
+import AlumniConnect from "../components/AlumniConnect/AlumniConnect";
+import Footer from "../components/Footer/Footer";
 
 function AlumniConnectPage() {
   return (

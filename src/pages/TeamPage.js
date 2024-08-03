@@ -1,7 +1,6 @@
-import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Team from "../components/Team";
+import Header from "../components/Header/Header";
+import Team from "../components/Team/Team";
+import Footer from "../components/Footer/Footer";
 
 function TeamPage() {
   return (

@@ -1,8 +1,7 @@
-import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import FutureEvents from "../components/FutureEvents";
-import PastEvents from "../components/PastEvents";
+import Header from "../components/Header/Header";
+import FutureEvents from "../components/Events/FutureEvents";
+import PastEvents from "../components/Events/PastEvents";
+import Footer from "../components/Footer/Footer";
 
 function EventsPage() {
   return (

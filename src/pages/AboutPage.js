@@ -1,10 +1,9 @@
-import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import AboutLOL from "../components/AboutLOL";
-import Overview from "../components/Overview";
-import Mission from "../components/Mission";
-import Vision from "../components/Vision";
+import Header from "../components/Header/Header";
+import AboutLOL from "../components/AboutLOL/AboutLOL";
+import Overview from "../components/Overview/Overview";
+import Mission from "../components/Mission/Mission";
+import Vision from "../components/Vision/Vision";
+import Footer from "../components/Footer/Footer";
 
 function AboutPage() {
   return (
